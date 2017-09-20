@@ -1,0 +1,67 @@
+﻿
+Cognitive Battery - Continuous Recognition
+------------------------------------------
+
+Author: Michael Gravina  
+Revision: 170919 
+
+
+# Purpose
+
+This protocol contains procedures for using the Continuous Recognition task in the
+Cognitive Battery.  
+
+Continuous Recognition is set up to test models of memory for the accuracy of judgements of
+whether a stimulus has been encountered in the past based on how long ago such stimulus
+was encountered. On each trial, the subject is presented with an image of an object.
+The subject's task is to indicate, quickly and accurately, whether they have seen the
+image before, by pressing the interface (keys or screen) left for yes and right for no.  
+
+Each image is presented twice within the session, with a delay between the first and second
+presentation varying from 1 (the image is presented twice in succession) and 5 (there are 4
+other images shown in between the first and second presentation). Accuracy of the response
+is expected to be greater when the delay is small.
+
+Data saved out from the task includes responses, correct/incorrect info, image info, and
+reaction time data.  
+
+
+# Terminology
+
+ - The Cognitive Battery (or CogBat) is a set of computerized tasks for the Android operating
+system, running on the [SMILE experiment-writing library for Python][1]. 
+
+ - **The Cognitive Battery Continuous Recognition task** is a task within the CogBat.
+
+
+# Required credentials/training
+
+No special qualifications required.
+
+
+# Required equipment and supplies
+
+ - Android phone or tablet set up with the [Cognitive Battery app][2].
+
+
+# Methods and procedures
+
+
+## Setting up the subject.
+
+Open the CogBat and enter the subject ID at the appropriate screen. Select the
+Continuous Recognition task from the task-selection menu.  
+
+Review the on-screen instructions with the subject and ask if they have any questions.
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|170919             |09/19/2017     |First version                                         |
+
+
+
+[1]: http://smile-docs.readthedocs.io/en/latest/
+[2]: https://osf.io/g7e3x/

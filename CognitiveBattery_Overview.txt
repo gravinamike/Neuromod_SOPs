@@ -1,0 +1,117 @@
+﻿
+Cognitive Battery - Overview
+----------------------------
+
+Author: Michael Gravina  
+Revision: 170918  
+
+
+# Purpose
+
+This protocol contains procedures for setting up and using the overarching features of the
+Cognitive Battery. Instructions for the component tasks are handled in their own protocols.
+
+
+# Terminology
+
+ - The Cognitive Battery (or CogBat) is a set of computerized tasks for the Android operating
+system, running on the [SMILE experiment-writing library for Python][1]. Currently, the CogBat
+contains the following tasks:  
+    - Flanker
+    - Moving Dot
+    - Continuous Recognition
+
+
+# Assignment of responsibilities
+
+A principal operator should be assigned for each block of experiments in order to set up the app,
+administer the tasks, and retrieve the data.
+
+Operator(s):  
+
+Name______________________________ Init______   Name______________________________ Init______  
+
+
+
+# Required credentials/training
+
+No special qualifications required.
+
+
+# Required equipment and supplies
+
+ - Android phone or tablet
+ - USB transfer cable appropriate to the tablet
+ - Cognitive Battery .apk installer file:
+     - [For general use][2]
+     - [For Cognitive Crew][3]
+
+
+# Methods and procedures
+
+
+## Installation
+
+Download the .apk installer file to your computer. Using the USB transfer cable to connect the
+Android device to your computer, transfer the .apk file to the device. 
+
+Operator_________ Date____ /____ /__________  
+
+On the Android device, open the File Manager app and find the .apk file. Run it to install the
+CogBat. You may have to create a shortcut to display the CogBat icon on the device's home screen.  
+
+Operator_________ Date____ /____ /__________  
+
+
+## Running the CogBat
+
+Press the CogBat icon. A splash screen showing a brain will appear for a few seconds while the
+CogBat loads. Depending on the version, this may take a long time, so be patient!  
+
+Depending on the version, you may be presented with a subject-entry screen. A field titled
+"Subject" will allow you to
+enter the subject ID. There will also be a "Settings" button which allows for finer control,
+including the ability to lock the subject ID so that it will automatically appear every time
+the CogBat is run.  
+
+Depending on the version, the tasks may begin immediately, or you may be presented with a screen
+allowing you to choose a task to begin.  
+
+Administrator_________ Date____ /____ /__________ Time________________  
+
+
+## Data retrieval
+
+Use the USB transfer cable to connect the Android device to your computer. Open the folder on
+the device named *SMILE/data/Cognitive Battery/data/*. Within this folder you will see data
+folders by subject. (If no subject ID was specified when the CogBat was run, the folder will be
+named "test000".) Within the subject folders, data will be stored in subfolders, one for each
+time the CogBat was run.  
+
+**Important:** When retrieving data, be aware that folder names are only guaranteed to be unique
+*within* a given device. If you are collecting data from multiple devices, there may be naming
+conflicts. You should take care to sort them into unique folders on the destination computer,
+and from there, curate them to ensure that no folders are inadvertently combined or overwritten.  
+
+Operator_________ Date____ /____ /__________  
+
+
+# Plan for electronic archiving
+
+Data should be stored on a secure, password-protected computer with periodic backups.
+Data should be grouped by subject folder, and within subject folders session folders should
+be aggregated across all functionally identical devices and curated as necessary to ensure
+that no sessions are lost and each session is identifiable by date and time.
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|170918             |09/18/2017     |First version                                         |
+
+
+
+[1]: http://smile-docs.readthedocs.io/en/latest/
+[2]: https://osf.io/3zh7s/
+[3]: https://osf.io/g7e3x/

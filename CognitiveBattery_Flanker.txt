@@ -1,0 +1,72 @@
+﻿
+Cognitive Battery - Flanker
+---------------------------
+
+Author: Michael Gravina  
+Revision: 170919 
+
+
+# Purpose
+
+This protocol contains procedures for using the Flanker task in the Cognitive Battery.  
+
+Flanker is set up to test time-constrained decision-making models where a subject must select
+among 2 competing options. On each trial, the subject is presented with a row of symbols.
+The central symbol is an arrow pointing either right or left, and the subject's task is to
+indicate, quickly and accurately, which direction it is pointing by pressing the interface
+(keys or touchscreen) in that direction.  
+
+The surrounding symbols, or "flankers", may be arrows pointing right or left or a separate symbol
+with no directionality. The flankers act to distract the subject with congruent, conflicting,
+or neutral information. Therefore an implicit goal of the task is to ignore the flankers
+and focus only on the central stimulus.  
+
+Each trial presents a new row of symbols. When all trials have been completed, the subject is
+presented with a score that factors in both accurate responses and reaction time.  
+
+Data saved out from the task includes responses, correct/incorrect info, and reaction time
+data.  
+
+
+# Terminology
+
+ - The Cognitive Battery (or CogBat) is a set of computerized tasks for the Android operating
+system, running on the [SMILE experiment-writing library for Python][1]. 
+
+ - **The Cognitive Battery Flanker task** is a task within the CogBat.
+
+ - **Flankers* are the stimuli symbols to the left and right of the central symbol. They
+serve to distract the subject with information that may conflict with the signal they are
+supposed to attend to (the direction of the central symbol).
+
+
+# Required credentials/training
+
+No special qualifications required.
+
+
+# Required equipment and supplies
+
+ - Android phone or tablet set up with the [Cognitive Battery app][2].
+
+
+# Methods and procedures
+
+
+## Setting up the subject.
+
+Open the CogBat and enter the subject ID at the appropriate screen. Select the Flanker task from
+the task-selection menu.  
+
+Review the on-screen instructions with the subject and ask if they have any questions.
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|170919             |09/19/2017     |First version                                         |
+
+
+[1]: http://smile-docs.readthedocs.io/en/latest/
+[2]: https://osf.io/g7e3x/

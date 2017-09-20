@@ -1,0 +1,181 @@
+﻿
+Lifelogging - Device Setup
+--------------------------
+
+Author: Michael Gravina  
+Revision: 170920  
+Effective date: 09/20/2017  
+
+
+# Purpose
+
+This protocol describes the setup of the Lifelogging wearable system prior to beginning
+data collection on a subject.  
+
+
+# Terminology
+
+ - The Lifelogging device is a wearable phone that passively collects image, audio
+(obfuscated), accelerometry, and GPS data during the wearer's everyday life. It also
+provides a vehicle for deploying the Cognitive Battery, which requires the wearer to
+periodically start an app and perform active cognitive tests.  
+
+ - The Cognitive Battery (or CogBat) is a set of computerized tasks for the Android operating
+system, running on the [SMILE experiment-writing library for Python][1]. 
+
+
+# Assignment of responsibilities
+
+A principal operator should be assigned to set up and manage the Lifelogging devices for
+each given study group.
+
+Device IDs:__________________________________   
+
+Operator(s):  
+Name______________________________ Init______   Name______________________________ Init______   
+
+
+# Required credentials/training
+
+No special qualifications required.
+
+
+# Required materials
+
+ - Plum Axe Plus 2 smartphone, model Z404
+ - Account information* for the master Lifelogging GMail account
+(lifelogging.osu@gmail.com)
+ - Account information* for the subject Lifelogging GMail accounts
+(OSUcompmem+axe*XXX*@gmail.com, where XXX is the left-zero-padded phone number,
+i.e. 001, 002, etc.)
+ - Account information* for the Lifelogging MobiLock Pro account. (The lab has a
+MobilLock Pro account with a yearly subscription fee and an online portal for 
+remotely managing the settings of all the devices. The email for the account is 
+lifelogging.osu@gmail.com.)
+ - Unforgettable.me app for Android (by author Simon Dennis), available on Google Play
+ - GPSLogger app for Android (by author Mendhak), available on Google Play
+ - [Cognitive Battery .apk installer file][1]
+ - USB Micro B transfer cable
+ - Cognitive Battery Overview protocol
+ - MobiLock Pro app for Android, available on Google Play.  
+
+\**Passwords can be obtained from the previous project manager (as of 2017, Mike Gravina,
+gravina.2@osu.edu).*
+
+
+# Methods and procedures
+
+
+## Smartphone setup
+Set up the smartphone with the following settings:  
+
+ - `Display` set to sleep after 5 minutes and set to stay in portrait view when the device
+is rotated.
+ - `Location` set to "High accuracy" mode.
+ - `Google` account `lifelogging.osu@gmail.com`
+ - `Date & time` set to automatic time and automatic time zone. When in Ohio, it should
+automatically select "GMT-04:00 Eastern Daylight Time". Time should be in 12-hour time
+format.
+ - Bluetooth disabled.  
+
+Operator_________ Date____ /____ /__________  
+
+
+## App setup
+
+Install the following apps with the specified settings:
+
+ - **Unforgettable.me**
+     - Each phone should be set up with a different gmail account for Unforgettable.me,
+with naming conventions as described in the *Required materials* section.
+     - On the "Setup" tab:
+         - `Accelerometer`, `GPS`, `Audio` and `Camera` should be On.
+         - `Raw Audio` should be Off.
+         - `Days to review` should be 1.
+         - `Recording trigger` should be Time.
+         - `Trigger interval` should be 30s.
+         - `Autofocus` and `Notifications` should be Off.
+     - Once these are set, the app should be locked by pressing the button on the
+lower right corner of the "Login" tab. (To unlock the app, press the button again and
+then enter the password through the standard password field.)
+
+Operator_________ Date____ /____ /__________  
+
+ - **GPSLogger**
+     - In "General Options", `Start on bootup` and `Start on app launch` should be
+enabled.
+     - In "Logging details", only `Log to CSV` should be enabled.
+     - In "Auto send, email and upload":
+         - `Allow auto sending` and `Send on Wi-Fi only` should be enabled.
+         - `How often?` should be set to 1440 minutes.
+         - Scroll down and press `Email`.
+             - `Allow auto sending` should be On.
+             - `Target email addresses` should be OSUcompmem+subjXXX@gmail.com.
+             - `Mail provider` should be Google Mail.
+             - `Username` and `From Address` should be OSUcompmem@gmail.com
+(without the subject ID)
+             - `Password` is the password for that GMail address.
+             - `Server` is smtp.gmail.com.
+             - `Port` is 465.
+             - `Use SSL?` is On.  
+
+Operator_________ Date____ /____ /__________  
+
+ - **CompMem Cognitive Battery app**
+     - Refer to the Cognitive Battery Overview protocol for instructions for installing
+the CogBat app.
+     - Start the app and go to the subject ID screen. Enter the subject ID, and lock the
+ID (this can be done from the "Settings" button menu). Proceed to the next screen, then
+exit the app before beginning the tasks.  
+
+Operator_________ Date____ /____ /__________  
+
+ - **MobiLock Pro**
+     - The MobiLock website allows you to log in and manage device profiles which can be
+assigned to multiple devices. We set up one device profile named "Standard".
+         - On the "Edit Profile" screen for this profile, the Select Apps tab should show all
+of the above apps and the Clock app as both `Enabled` and `Visible on homescreen`.
+         - On the "Optional settings" screen, `Allow users to access 'Wifi Connection'
+inside of app` and `Allow users to connect/disconnect from Wifi Network` should both be
+enabled.
+     - On the "Devices" screen of the website, an entry should exist for every phone, named
+"Axe*XXX*" with XXX being the left-zero-padded phone number (i.e. 001, 002, etc.).
+     - On each phone, enter the MobiLock Pro app and log in with the corresponding phone
+ID.  
+
+Operator_________ Date____ /____ /__________  
+
+All of the apps above should be given full permissions. This can be accomplished by
+going to the the Android Settings/Apps menu, selecting each of the apps above in the
+menu, selecting "Permissions", and making sure that all of the listed permissions are
+enabled.  
+
+Operator_________ Date____ /____ /__________  
+
+
+## Prep for deployment
+
+When the phones are in the field, MobiLock Pro should be activated so that the subjects
+are locked out of all but the chosen apps. If necessary, you will be able to make remote
+changes to the MobiLock lockout settings through the online portal, as long as the
+phones are connected to WiFi.  
+
+Operator_________ Date____ /____ /__________  
+
+
+# IRB protocols
+
+ - 2009B0093: Networks of Memories
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|170920             |09/20/2017     |First version                                         |
+
+
+
+[//]: # (Link URLs below:)
+
+[1]: https://osf.io/3zh7s/

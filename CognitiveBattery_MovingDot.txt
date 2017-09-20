@@ -1,0 +1,79 @@
+﻿
+Cognitive Battery - Moving Dot
+------------------------------
+
+Author: Michael Gravina  
+Revision: 170919 
+
+
+# Purpose
+
+This protocol contains procedures for using the Moving Dot task in the Cognitive Battery.  
+
+Moving Dot is set up to test time-constrained decision-making models where a subject must select
+among 2 competing options. On each trial, the subject is presented with a circular field which
+contains dots moving in many directions. The subject's task is to indicate, quickly and
+accurately, whether more dots are moving right or left by pressing the interface
+(keys or touchscreen) in that direction.  
+
+Each trial presents a different ratio of dots moving right and left in the horizonal directions
+(termed "coherence"). This coherence varies from trial to trial from 0 (no dominant
+direction) to 1 (all horizontally-moving dots are going in the same direction). High-coherence
+trials are relatively easy, since a clear majority of the dots are moving in one direction.
+Low-coherence trials may be quite difficult, as they require quickly estimating the populations
+of many moving stimuli.  
+
+Zero-coherence trials are a special case, since neither "left" nor "right" are correct. To
+keep the response set consistent with the rest of the trials, a direction is arbitrarily
+chosen to be "right". In this sense, zero-coherence trials approximate an extremely-low-
+coherence trial, where there is technically a correct answer, but it is effectively impossible
+to detect it.  
+
+Data saved out from the task includes responses, correct/incorrect info, coherence and
+dominant direction of the stimuli, and reaction time data.  
+
+
+# Terminology
+
+ - The Cognitive Battery (or CogBat) is a set of computerized tasks for the Android operating
+system, running on the [SMILE experiment-writing library for Python][1]. 
+
+ - **The Cognitive Battery Moving Dot task** is a task within the CogBat.
+
+ - **Coherence** is the ratio of dots moving in the dominant direction to the dots moving
+in the secondary direction. A coherence of 1 either means all the horizontal-moving dots are 
+moving left or all the horizontal-moving dots are moving right. A coherence of 0 means there
+are exactly the same number of horizontal-moving dots going each way.
+
+
+# Required credentials/training
+
+No special qualifications required.
+
+
+# Required equipment and supplies
+
+ - Android phone or tablet set up with the [Cognitive Battery app][2].
+
+
+# Methods and procedures
+
+
+## Setting up the subject.
+
+Open the CogBat and enter the subject ID at the appropriate screen. Select the Moving Dot task from
+the task-selection menu.  
+
+Review the on-screen instructions with the subject and ask if they have any questions.
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|170919             |09/19/2017     |First version                                         |
+
+
+
+[1]: http://smile-docs.readthedocs.io/en/latest/
+[2]: https://osf.io/g7e3x/
