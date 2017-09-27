@@ -10,11 +10,6 @@ Effective date: 09/18/2017
 # Purpose
 
 
-# Device features
-[//]: # (What type of data does it collect?)
-[//]: # (What does the raw data look like?)
-
-
 # Terminology
 
 
@@ -36,6 +31,43 @@ IRB protocols
 
 # Methods and procedures
 
+
+
+Instructions
+Install the Actiware software on your computer.
+Connect the Actiwatch Spectrum Plus to the computer using a USB cable.
+From the Communications menu, select "Actiwatch Console..." and wait for the console to finish checking the connection with the watch.
+Select "Actiwatch Spectrum Plus", then Configure. (Download any data beforehand as it will be erased)
+Create "New subject". Set up info.
+Next, select the collection epoch length (can be 15s, 30s, 1m, 2m, 5m) and what channels to log (activity, light, marker)
+Data collection duration in weeks. Set time zone. Additional configuration options as desired.
+
+To retrieve data:
+Connect the Actiwatch Spectrum Plus to the computer using a USB cable.
+From the Communications menu, select "Actiwatch Console..." and wait for the console to finish checking the connection with the watch.
+Select "Actiwatch Spectrum Plus", then Retrieve.
+Save the data. 
+Choose whether to continue collection, set up a new subject, or put the watch to sleep for later.
+
+Clean with alcohol.
+Keep charged before long storage, and charge again every 5 months at minimum (or risk lockout)
+
+Database management
+Create a new database for a given study
+
+
+Score pad allowing entry of numeric score
+You can set an audible reminder to enter a score or they can do it themselves.
+1 score per epoch max
+Cautions
+No Daylight Savings Time correction
+
+
+
+
+
+
+
 ## Sub-heading
 
 Equation:
@@ -48,6 +80,7 @@ Checkboxes, fields and data-source/signature/date fields (protocols should doubl
 [  ]  
 ___________  
 Operator_________ Date____ /____ /__________  
+
 
 
 # Schedule of repeating tasks

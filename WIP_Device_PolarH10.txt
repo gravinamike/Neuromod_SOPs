@@ -10,11 +10,6 @@ Effective date: 09/18/2017
 # Purpose
 
 
-# Device features
-[//]: # (What type of data does it collect?)
-[//]: # (What does the raw data look like?)
-
-
 # Terminology
 
 
@@ -36,6 +31,15 @@ IRB protocols
 
 # Methods and procedures
 
+
+Strap must be tight
+How long to leave puck on while syncing?
+Clean puck electrodes with warm water, maybe mild soap. NO ALCOHOL.
+Always remove the puck.
+
+
+
+
 ## Sub-heading
 
 Equation:
@@ -48,6 +52,7 @@ Checkboxes, fields and data-source/signature/date fields (protocols should doubl
 [  ]  
 ___________  
 Operator_________ Date____ /____ /__________  
+
 
 
 # Schedule of repeating tasks

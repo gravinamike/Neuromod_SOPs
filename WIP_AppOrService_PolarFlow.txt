@@ -10,11 +10,6 @@ Effective date: 09/18/2017
 # Purpose
 
 
-# Device features
-[//]: # (What type of data does it collect?)
-[//]: # (What does the raw data look like?)
-
-
 # Terminology
 
 
@@ -48,6 +43,7 @@ Checkboxes, fields and data-source/signature/date fields (protocols should doubl
 [  ]  
 ___________  
 Operator_________ Date____ /____ /__________  
+
 
 
 # Schedule of repeating tasks

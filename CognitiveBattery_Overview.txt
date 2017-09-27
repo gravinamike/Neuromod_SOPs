@@ -45,6 +45,7 @@ No special qualifications required.
  - Cognitive Battery .apk installer file:
      - [For general use][2]
      - [For Cognitive Crew][3]
+ - [Continuous Recognition image set][4]
 
 
 # Methods and procedures
@@ -52,13 +53,20 @@ No special qualifications required.
 
 ## Installation
 
-Download the .apk installer file to your computer. Using the USB transfer cable to connect the
-Android device to your computer, transfer the .apk file to the device. 
+Download the .apk installer file and the CogBat image set to your computer. Unzip the
+image set. Using the USB transfer cable to connect the Android device to your
+computer, and transfer the .apk file and the "smile_images" folder from the
+image set to the device. 
 
 Operator_________ Date____ /____ /__________  
 
 On the Android device, open the File Manager app and find the .apk file. Run it to install the
 CogBat. You may have to create a shortcut to display the CogBat icon on the device's home screen.  
+
+Operator_________ Date____ /____ /__________  
+
+Put the smile_images folder into the same folder where the SMILE folder is located
+(this should be the highest-level folder on the device, often called "Internal storage").  
 
 Operator_________ Date____ /____ /__________  
 
@@ -111,7 +119,9 @@ that no sessions are lost and each session is identifiable by date and time.
 |170918             |09/18/2017     |First version                                         |
 
 
+[//]: # (Link URLs below:)
 
 [1]: http://smile-docs.readthedocs.io/en/latest/
 [2]: https://osf.io/3zh7s/
 [3]: https://osf.io/g7e3x/
+[4]: https://osf.io/4tzxn/
