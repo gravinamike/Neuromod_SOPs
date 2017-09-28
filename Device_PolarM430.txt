@@ -3,8 +3,8 @@ Polar M430 Smartwatch - Use
 ---------------------------
 
 Author: Michael Gravina  
-Revision: 170927  
-Effective date: 09/27/2017  
+Revision: 17098  
+Effective date: 09/28/2017  
 
 
 # Purpose
@@ -22,17 +22,18 @@ pairing watch with the Polar H10 chest strap.
  - GPS tracker (up to 30 continuous hours with 60s epochs in power-save Training
 mode)
  - Actigraphy-based sleep monitoring (continuous). Accurate, but not nearly as
-feature-rich as the Phillips Actiwatch.
+feature-rich as the Phillips Actiwatch, and currently unable to export from Flow
+web app.
  - Step counter (continuous)
  - Fitness coaching and workout-monitoring features  
 
-Data output formats include:
+Data output formats include:  
+
  - All data can be visualized using the Polar Flow web app.
- - Heart rate data can be exported from Polar Flow web app in .CSV format.
- - GPS data can be exported from Polar Flow web app in .GPX format (basically .XML).
-
-
-# Terminology
+ - Heart rate data can be exported from Polar Flow web app in .CSV format, with 1s
+temporal resolution.
+ - GPS data can be exported from Polar Flow web app in .GPX format (basically .XML),
+with 60s temporal resolution on power-save mode.
 
 
 # Assignment of responsibilities
@@ -59,26 +60,37 @@ Name______________________________ Init______   Name____________________________
 
 ## Setup
 
- - Download the Polar Flow app to your Android smartphone. Log in using your Polar account.
+ - **Initial setup:**
+Download the Polar Flow app to your Android smartphone. Log in using your Polar account.
 If you do not yet have an account, you may be prompted to create one.  
 Download the Polar FlowSync software to your desktop computer and run the installer.
- - Connect the watch to the computer using the supplied charging/data-transfer cable. The
-FlowSync software will notify you when the device has been synced to the software.
- - If the device has been used previously on another account, it will need to be reset to
+Connect the watch to the computer using the supplied charging/data-transfer cable. You
+will be prompted to set up or log in to a Polar Flow account. Follow the on-screen
+instructions to set up your account and register the watch to that account. The
+FlowSync software will then notify you when the device has been synced to the software.
+
+ - **Resetting the watch:**
+If the device has been used previously on another account, it will need to be reset to
 factory settings. This can be done by going to the "Settings" screen (accessed through the
 cog icon). *Caution: Factory reset will wipe all data off of the device.* After resetting
 the watch, click "Sync" again and wait for the sync to finish.
- - **Pairing the watch with your phone:** *Please sync the watch with the Flow service
+
+ - **Pairing the watch with your phone:**
+*Please sync the watch with the Flow service
 using a desktop computer as described above. The device may not register properly on the
 phone if has not already been registered through the desktop.*  
-On the Android phone, make sure Bluetooth is enabled. Open the Polar Flow app and login to
-your account.
+Open the Polar Flow app on your phone and login to your account.  
+On the phone, go to Bluetooth and make sure it is enabled. Enable "Other
+Bluetooth devices can find your phone". This will only last for a minute or two so proceed
+quickly to the next steps.  
 Go to "Devices" under the main menu. You should see "Got a new Polar device with mobile
-setup?". On the watch, navigate (using the top and bottom right-side buttons) to "Settings",
+setup?".  
+On the watch, navigate (using the top and bottom right-side buttons) to "Settings",
 "General settings", "Pair and sync", and "Pair and sync mobile device". Place the watch
-so that it is touching the phone.
-
-###########################MORE HERE
+so that it is touching the phone.  You will see the watch saying "Pairing".  
+When you see the Polar M430 appear on the phone's screen, select it. You will be
+prompted to enter a passcode which will be supplied by the smartwatch screen). Do so.
+The watch will say "Syncing", then after a minute report that the pairing is complete.  
 
  - **Pairing the watch with heart monitor strap:**
 You should be wearing the H10 heart monitor before attempting to pair it with the M430
@@ -89,6 +101,19 @@ On the watch, navigate (using the top and bottom right-side buttons) to "Setting
 "General settings", "Pair and sync", and "Pair other device". Place the watch
 so that it is close to the H10 puck and wait for the watch to confirm that they are
 now paired.  
+
+
+ - **Setting continuous heart-rate tracking:**
+By default, continuous heart-rate tracking is off, meaning you must enter Training mode
+in order to acquire heart rate data. To turn continuous heart-rate tracking on, on the
+watch, navigate (using the top and bottom right-side buttons) to "Settings",
+"General settings". Select "Continuous HR tracking" and press Select (the middle button
+on the right side).  
+*Note that continous HR tracking is still not fully continuous, but
+activates only when the heart rate is elevated or there is above-average movement. For
+truly continuous HR tracking, you must enter Training mode.*
+
+
  - **Setting power-save GPS mode:**
 On the watch, navigate (using the top and bottom right-side buttons) to "Settings",
 "General settings", "Sport Profiles", "Other outdoor", and "GPS recording". ("Other
@@ -112,82 +137,71 @@ sure you are starting on the Time screen (if not, press Back, the bottom-left bu
 until you get there). Press the Select button (middle button on the right side of the
 watch) once. Move up and down until you see "Other outdoor", and press Select again.
 You may see a warning message, and then recording will begin.  
+ 
 To deactivate GPS, hold the Back button. You will see a message counting
 down and then training mode will be ended.  
+
 Training mode can run up to 30 hours in power-save mode, during which time it acquires
 GPS once every 60 seconds. However, you should charge and sync the phone at least
 every 24 hours if GPS acquisition is going on nearly continuously. It is recommended
 to activate training mode on waking up in the morning, then deactivate, plug in and
-sync right before sleep.    
+sync right before sleep.  
 
 
-Syncing data
-Visualizing and exporting data
-Maintenance
+## Syncing data
 
+You can sync data through the Android phone or through the computer.  
 
-Has to be in time view before you can transfer data
-Activating power-save mode
+ - To sync through the phone, ensure the smartwatch is in Time mode and then simply
+hold the Back button (bottom left on the watch) until you see the message that the
+devices are syncing.  
 
-
-Pairing with the app:
-Wipe device factory settings. Sync to computer. Registration makes it easier.
-
-Pairing with strap and phone and computer
-
-
-By default, continuous HR tracking is off.
-
-
-## Sub-heading
-
-Equation:
-$$ t_i = \rho t_{i-1} + t^{IN}, $$
-
-Figure with a caption:
-![*Example figure with caption.* Here is how to write a figure with a caption. You can insert multiple image types, including PNG and PDF. Figures will be inserted to fill the complete width of the page, though you can request a width as a percentage (see the end of the caption). The tag after the pound sign is key for referencing the figure in the text.](figs/example.png){#fig:example width=50%}
-
-Checkboxes, fields and data-source/signature/date fields (protocols should double as records)
-[  ]  
-___________  
-Operator_________ Date____ /____ /__________  
-
+ - To sync through the computer, ensure the smartwatch is in Time mode and connect
+the watch to the computer using the supplied
+charging/data-transfer cable. You will be notified once the device has been synced to
+the software. The Polar Flow web app should start automatically after syncing.  
 
 
 # Schedule of repeating tasks
-[//]: # (What maintenance is required for device – how often should it be checked)
+
+## Maintenance
+
+ - Charge and sync the smartwatch daily. The easiest way to do so is to simply
+plug it in to the computer at night using the data transfer/charging cable.  
+
+ - Rinse the smartwatch in warm, mildly soapy water from time to time and after
+sweaty activity.  
 
 
 # Data retrieval
-[//]: # (How to get the raw data from the device)
+
+Go to the Polar Flow web app.  
+
+ - On the Diary tab, you will see a calendar entry for every day that data has been
+acquired. Click on the day to see a list of Training sessions for that day, and click
+on the session to see a full visualization of the session, including statistics,
+route map (if applicable), heart rate and speed plots.  
+
+ - On the bottom of the page for the Training session you will see a button labeled
+"Export session". Clicking this presents you with a number of download options,
+including .CSV for heart rate and .GPX for GPS.  
+
+ - On the Sleep tab, you will see a nightly report of sleep actigraphy as well as
+statistics for sleep efficiency and fragmentation. At the current time, there is no
+export functionality for sleep data from Polar Flow.  
 
 
 # Data processing
-[//]: # (What software is required to download/view the data)
-[//]: # (Process for getting data into Smartabase (later))
 
-
-# Quality control
-
-Deviation reporting  
-Audits for patients/dat  
-
-
-# Plan for electronic archiving
-
-Data storage/security requirements  
-Data entry methods  
-Audits  
-
-
-# References
+[//]: # (Process for getting data into Smartabase - later)  
+*Section pending*  
 
 
 # Revisions
 
 |**SOP Revision #** |**Date**       |**Description of change(s)**                          |
 |-------------------|---------------|------------------------------------------------------|
-|170927             |09/27/2017     |First version                                         |
+|170928             |09/28/2017     |First version                                         |
 
 
 [//]: # (Link URLs below)
