@@ -1,0 +1,152 @@
+﻿
+Phillips Respironics Actiwatch - Use
+------------------------------------
+
+Author: Michael Gravina  
+Revision: 171002  
+Effective date: 10/02/2017  
+
+
+# Purpose
+
+This protocol describes the use of the Phillips Respironics Actiwatch for the
+collection of sleep data through actigraphy and light sensing, as well as
+scoring support for ecological momentary assessment (EMA).  
+
+
+# Device features
+
+The Phillips Respironics Actiwatch is a wearable medical device which features:  
+
+ - Actigraphy for monitoring circadian rythms and other sleep parameters  
+ - Light sensing in both white and color channels  
+ - Theoretical 60-day recording duration without charging or data offload
+ - Epoch lengths of (15s, 30s, 1m, 2m, or 5m)  
+ - Scheduled reminders (shake and sound) along with an interface for subjects to
+enter up to 2 momentary scores (rating sleep quality, pain, etc.)  
+ - Utilizes Actiware software for offline sleep characterization  
+
+The Actiwatch is essentially a "black-box" from the subject's perspective,
+requiring very little maintenance but also offering effectively no live
+feedback. However, its integration with the relatively feature-rich Actiware
+software offers more in-depth analysis than commercial sleep trackers such as
+the Polar or FitBit smartwatches.  
+
+Data output formats include:  
+
+ - Actiware database viewer, which features auto-annotated plots for actigraphy,
+light, and score data, as well as custom intervals and a variety of statistics
+for activity, wakefulness, rest, and sleep intervals, light exposure and
+intensity, and off-wrist time.  
+ - Actiware export files in .CSV format, tabulating all of the data above.  
+
+
+# Assignment of responsibilities
+
+A principal operator should be assigned for the maintenance, setup and data-
+retrieval on each Actiwatch.  
+
+Operator(s):  
+Name______________________________ Init______   Name______________________________ Init______  
+
+
+# Required equipment and supplies
+
+ - Phillips Respironics Actiwatch
+ - Phillips Actiware software (provided with the Actiwatch)
+ - USB Micro B transfer cable  
+
+
+# Methods and procedures
+
+
+## Initial configuration
+
+ - Install the Actiware software on your computer and open it.  Create a new database by going
+to "File", "Database", "New..." and following the instructions. *It is highly recommended to
+create a new database for each project, rather than using the supplied demo database.*  
+
+ - Connect the Actiwatch Spectrum Plus to the computer using the USB Micro-B cable. (There is
+a small sliding panel on the bottom side of the watch which conceals the USB port.)
+From the Communications menu in Actiware, select "Actiwatch Console..." and wait for the
+console to finish checking the connection with the watch. From the list of devices that
+is shown, select "Actiwatch Spectrum Plus", then click Configure.  
+
+ - If the watch has been used previously, you may be prompted to retrieve the data in
+memory. *If you choose not to retrieve this data, it will be erased when the watch is
+reconfigured.*  
+
+ - If the subject doesn't yet exist in the database, click "New subject" and fill in the
+appropriate fields in the form. Otherwise, select the existing subject from the database.
+Next, select the collection epoch length. *Note that while 2m and 5m epochs are available,
+it is recommended to use 1m or less, as the Actiware software can't analyze epochs longer
+than this.* Select start date and time, the duration of data collection in weeks, the
+time zone (be aware that there is no automatic Daylight Savings correction on the
+Actiwatch). Select what data channels to log (activity, light, scores), and additional
+configuration options as desired.  Pay attention to the setting which determines whether
+taking the watch off causes periodic reminder beeps. This can be annoying and should only
+be enabled if the subject is required to wear the watch constantly!  
+
+ - To configure reminders and subjective scores, click `Advanced`. Here you can schedule
+audible and vibratory reminders to enter a score, and set which of two scores (A or B)
+are available.  
+
+ - When finished, click the Configure button. A confirmation message appears stating that
+configurations have been selected and prompting you to continue. Confirm by clicking
+"Erase and Continue". You will see a progress bar followed by a message that configuration
+is complete.
+
+
+# Schedule of repeating tasks
+
+## Maintenance
+
+ - **Cleaning**
+Clean the Actiwatch with alcohol in between collection periods.  
+
+ - **Sleep mode:**
+Sleep mode causes the device to be put into low-power mode to preserve battery life
+and for long term storage. It is activated in the Actiware software after data
+retrieval (see "Data retrieval" below).  
+*Be sure to fully charge the device (approximately 2 hours) before storing the device
+for an extended period.*
+
+ - **Charging:**
+If storing for long periods, checking and recharging the battery every 5 months
+will help maintain performance. Do not let the device go uncharged for significantly
+longer than this, or you risk lockout, which requires manufacturer service to correct.  
+
+
+# Data retrieval
+
+ - **To download the data to the Actiware database:**  
+Connect the Actiwatch to the computer using the USB Micro-B cable. From the
+Communications menu, select "Actiwatch Console..." and wait for the console to finish
+checking the connection with the watch.  
+Select "Actiwatch Spectrum Plus", then "Retrieve". When prompted, save the data.   
+Select whether to continue the collection period, set up a new subject, or put the
+watch to sleep for later use. (See "Maintenance" for information on sleep mode.)  
+
+ - **To export the data from the Actiware database:**  
+From the database tree on the left side of the Actiware window, select the subject and
+the date of data acquisition, then double-click the analysis you wish to export. You
+will see the analysis plots appear in the middle window.  
+Click "File", "Export...". Answer the prompts to de-identify the subject, then save
+the .CSV file to the folder of your choice.  
+
+
+# Data processing
+
+Data analysis using the Actiware software is explained in detail in the Actiware
+reference tutorial (under "Help", "Contents...") and in the SOP
+"AppOrService_Actiware" *(pending)*.
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|171002             |10/02/2017     |First version                                         |
+
+
+[//]: # (Invisible comment)

@@ -1,0 +1,63 @@
+﻿
+Polar M430 Smartwatch
+---------------------
+<br>
+
+![**The Polar M430**.](Polar_M430.png) 
+ 
+<br>
+
+# Features
+
+ - Second-by-second continuous heart rate. More accurate when paired with the
+Polar H10 chest strap.   
+
+ - GPS every 60s for up to 30 hours.  
+
+ - Actigraphy-based sleep monitoring.
+
+ - Step counter.
+
+ - Fitness coaching and workout-monitoring features through Polar Flow's online
+service.  
+
+
+# Example data
+
+![**Heart rate monitoring**, as visualized in the Flow interface. This data was
+captured using a paired Polar H10 heart monitor strap. Rest periods alternate with
+1-minute running intervals from starting at 1, 4, and 7 minutes.](Polar_Flow_heart_rate.png)  
+
+<br>
+
+![**GPS**, as visualized in the Flow interface. You can zero in on heart rate and
+speed for any point along the route.](Polar_Flow_GPS.png)  
+
+<br>
+
+![**Sleep monitoring**, as visualized in the Flow interface.](Polar_Flow_sleep.png)  
+
+<br>  
+<br>  
+<br>  
+<br>  
+<br>  
+
+# Demo
+
+ - **Heart-rate monitoring:** From the Time screen, press the red button twice.
+You will see your heart rate displayed after a moment. Move around a bit and watch
+as it tracks your activity. Mention that the watch is also collecting GPS every
+minute. Hold the Back button (bottom left side) 5 seconds to exit the heart
+monitor.  
+
+ - **Explore the [Polar Flow][1] app's features and functions**. The demo account can
+be logged into using the email gravina.2@osu.edu and the password 2euroMod. The heart
+rate example above is [here][2], and the GPS example is [here][3].
+
+
+[//]: # (Link URLs below)
+
+[1]: https://flow.polar.com/diary
+[2]: https://flow.polar.com/training/analysis/1783868650
+[3]: https://flow.polar.com/training/analysis/1786815052#

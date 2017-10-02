@@ -3,13 +3,13 @@ Polar M430 Smartwatch - Use
 ---------------------------
 
 Author: Michael Gravina  
-Revision: 17098  
+Revision: 170928  
 Effective date: 09/28/2017  
 
 
 # Purpose
 
-This protocol details the use of the Polar M430 smartwatch.
+This protocol details the use of the Polar M430 smartwatch.  
 
 # Device features
 [//]: # (What type of data does it collect?)
@@ -33,7 +33,7 @@ Data output formats include:
  - Heart rate data can be exported from Polar Flow web app in .CSV format, with 1s
 temporal resolution.
  - GPS data can be exported from Polar Flow web app in .GPX format (basically .XML),
-with 60s temporal resolution on power-save mode.
+with 60s temporal resolution on power-save mode.  
 
 
 # Assignment of responsibilities
