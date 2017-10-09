@@ -1,0 +1,140 @@
+﻿Lifelogging - Collection
+------------------------
+
+Author: Michael Gravina  
+Revision: 171003  
+Effective date: 10/03/2017  
+
+
+# Purpose
+
+This protocol describes what the Lifelogging operator(s) must do daily while data
+collection is proceeding, after the subjects have been set up with the Lifelogging
+devices and sent out into the field.  
+
+
+# Assignment of responsibilities
+
+A principal operator should be assigned to set up and manage the Lifelogging data for
+each given study group.
+
+Subject IDs:__________________________________   
+
+Operator(s):  
+Name______________________________ Init______   Name______________________________ Init______   
+
+
+# Required equipment and supplies
+
+ - Account information* for the master Lifelogging GMail account
+(lifelogging.osu@gmail.com)
+ - Account information* for the subject Lifelogging GMail accounts
+(OSUcompmem+axe*XXX*@gmail.com, where XXX is the left-zero-padded phone number,
+i.e. 001, 002, etc.)
+ - Account information* for the Lifelogging MobiLock Pro account. (The lab has a
+MobilLock Pro account with a yearly subscription fee and an online portal for 
+remotely managing the settings of all the devices. The email for the account is 
+lifelogging.osu@gmail.com.)  
+
+\**Passwords can be obtained from the previous project manager (as of 2017, Mike Gravina,
+gravina.2@osu.edu).*
+
+
+# Schedule of repeating tasks
+
+Each day while collection is proceeding:  
+
+ - **Check the Lifelogging voicemail** for calls from participants. The voicemail can be
+accessed by participants at (614) 344-1189 and goes to a Google Voice account under the
+email address "lifelogging.osu@gmail.com" (you will receive a message at that address
+when there is new voicemail).  
+ 
+ - Also **check the email of the chief investigator**, which should have been listed in
+the Participant Instructions that you handed out.  
+ 
+ - Download the data (as described below).  
+
+
+# Data retrieval
+
+For each subject:  
+ 
+ - Request the download from Unforgettable.me.
+     - Go to the Unforgettable.me website and login using the account
+"OSUcompmem+axeXXX@gmail.com", where XXX is the left-zero-padded device number.
+     - In the search bar, enter the current month and year and push enter. Then
+narrow the date range further using the date fields that appear and push enter. You
+should now see records by hour for a few days. It is good to leave a little time-overlap
+with previous data downloads (ideally 2 days) so that you do not miss downloading any
+data that falls in between downloads.
+     - Click the small button at the right of the search bar and select "Download".
+A message should appear asking you to confirm the large download; say yes.  
+If you have technical issues downloading the data, contact the Unforgettable.me crew:
+Andrew Hide (andrew.hide@newcastle.edu.au) or Simon Dennis
+(simon.dennis@newcastle.edu.au).  
+ 
+ - After a half hour or so (per subject), download the data from the link that
+is sent to the "OSUcompmem@gmail.com" account.
+     - The email will be tagged by the account according to which subject number
+the .tar archive is for. Make sure you keep the different subjects straight. Mixing
+them up will result in combining the files from different subjects and this is
+difficult to detect and a *grand* pain to fix. I recommend downloading them one at a
+time and renaming the files immediately to "subjXXX.tar".
+     - Extract the archive and rename the resulting directory "subjXXX_temp".  
+ 
+ - Each day you should also download the ".csv" files from the GPSLogger app.
+     - The logger app will auto-send a file around midnight when the device
+is on wifi. This may be a zipfile containing a ".csv" and a ".gpx", or it may just
+be an unzipped ".csv" file. In any case, the ".csv" file is what you want. If
+there are multiple ".csv" files for the same subject and date, just take one
+(occasionally the logger sends duplicate files).  
+
+
+# Plan for electronic archiving
+
+ - Open the folder on "BORG" called "cmlab/data/lifelog/Lifelog_2017/201706/"
+(you can create new folders on this pattern for different years and experiments that
+start on different months).  
+
+ - Copy the "temp" folder into the folder.  
+
+ - Copy the tarfile to the "tarfiles" subfolder.  
+
+ - Open a terminal and run the archiveSort script: "python archiveSort.py
+subjXXX_temp subjXXX False". This will copy all of the files from the temp directory
+into the subject's directory, sorting them according to date. If the last parameter
+is "False" it will simply skip duplicates (remember we took a little overlap time
+when we downloaded the files); if the last parameter is "True" it will overwrite
+duplicates. You should see at least some duplicates overwritten or skipped if you
+downloaded with overlap time. If you don't, you may be copying the wrong files for
+this subject!  
+
+ - Repeat for all subjects.  
+
+ - Delete the temp folders on "BORG" and all of the files from the
+computer you originally downloaded to (be sure to delete them from the "Trash"
+folder too).  
+
+ - Put the GPSLogger ".csv" file for each subject (again, taking care not to mix
+up different subjects) into the appropriate folder subject's folder on "BORG"
+("cmlab/data/lifelog/Lifelog_20XX/20XXXX/subjXXX"). You do not need to (and should
+not!) sort the ".csv"s into the by-date folders. Downstream analyses will assume
+that these ".csv"s are in the root folder for the subject, alongside the ".csv"s
+generated by Unforgettable.me.  
+
+
+# IRB protocols
+
+ - 2009B0093: Networks of Memories
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|171003             |10/03/2017     |First version                                         |
+
+
+[//]: # (Link URLs below:)
+
+[1]: https://osf.io/3zh7s/

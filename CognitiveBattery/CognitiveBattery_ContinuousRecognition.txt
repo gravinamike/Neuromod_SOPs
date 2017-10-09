@@ -3,7 +3,7 @@ Cognitive Battery - Continuous Recognition
 ------------------------------------------
 
 Author: Michael Gravina  
-Revision: 170919 
+Revision: 171009  
 
 
 # Purpose
@@ -13,7 +13,13 @@ Cognitive Battery.
 
 Continuous Recognition is set up to test models of memory for the accuracy of judgements of
 whether a stimulus has been encountered in the past based on how long ago such stimulus
-was encountered. On each trial, the subject is presented with an image of an object.
+was encountered. It is designed to access both working and long-term memory, as well as
+decision-making and perceptual processing speed. Depending on the image set used, the
+task can also access inhibitory control based on task demands (for example, if stimuli
+contain semantic or categorical relations but the subject's task does not involve
+attending to these dimensions).   
+
+On each trial, the subject is presented with an image of an object.
 The subject's task is to indicate, quickly and accurately, whether they have seen the
 image before, by pressing the interface (keys or screen) left for yes and right for no.  
 
@@ -28,8 +34,8 @@ reaction time data.
 
 # Terminology
 
- - The Cognitive Battery (or CogBat) is a set of computerized tasks for the Android operating
-system, running on the [SMILE experiment-writing library for Python][1]. 
+ - The [**Cognitive Battery (or CogBat)**][1] is a set of computerized tasks for the Android operating
+system, running on the [SMILE experiment-writing library for Python][2]. 
 
  - **The Cognitive Battery Continuous Recognition task** is a task within the CogBat.
 
@@ -41,7 +47,7 @@ No special qualifications required.
 
 # Required equipment and supplies
 
- - Android phone or tablet set up with the [Cognitive Battery app][2].
+ - Android phone or tablet set up with the [Cognitive Battery app][3].
 
 
 # Methods and procedures
@@ -60,8 +66,11 @@ Review the on-screen instructions with the subject and ask if they have any ques
 |**SOP Revision #** |**Date**       |**Description of change(s)**                          |
 |-------------------|---------------|------------------------------------------------------|
 |170919             |09/19/2017     |First version                                         |
+|171003             |10/03/2017     |Added links to other CogBat protocols                 |
+|171009             |10/09/2017     |Updates to task rationale                             |
 
 
 
-[1]: http://smile-docs.readthedocs.io/en/latest/
-[2]: https://osf.io/g7e3x/
+[1]: https://osf.io/8mdfy/wiki/home/
+[2]: http://smile-docs.readthedocs.io/en/latest/
+[3]: https://osf.io/g7e3x/

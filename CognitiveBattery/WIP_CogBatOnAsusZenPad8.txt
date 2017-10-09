@@ -1,0 +1,112 @@
+﻿Cognitive Battery on Asus ZenPad 8
+----------------------------------
+
+Author: Michael Gravina  
+Revision: 171004  
+Effective date: 10/04/2017  
+
+
+# Purpose
+
+This protocol describes the setup and maintenance of the Cognitive Battery task set on
+the Asus ZenPad 8 tablet, for use in the Columbus Crew study.  
+
+
+# Device features
+[//]: # (What type of data does it collect?)
+[//]: # (What does the raw data look like?)
+
+
+# Terminology
+
+ - The [Cognitive Battery (or CogBat)][1] is a set of computerized tasks for the Android operating
+system, running on the [SMILE experiment-writing library for Python][2]. 
+
+
+
+# Assignment of responsibilities
+
+A principal operator should be assigned for the setup, data management and maintenance of
+each Asus ZenPad 8 with the Cognitive Battery.
+
+Device #s:___________________________________
+
+Operators:  
+Name______________________________ Init______   Name______________________________ Init______  
+
+
+# Required equipment and supplies
+
+ - Asus ZenPad 8 tablet, model P00A, also known as 380M
+ - USB Micro-B transfer cable.
+ - [Crew Cognitive Battery .apk installer file][3]
+ - [Continuous Recognition image set][4]
+ - "Stay Alive! Keep screen awake" app for Android (author SyNetDev), available on
+Google Play.  
+
+
+# Methods and procedures
+
+## Setup
+
+Refer to the [main Cognitive Battery protocol][1] for the basic instructions on setting
+up the CogBat on an Android tablet. 
+
+One additional step is required for some ZenPads, which vary in the maximum time they
+allow the screen to remain on without interaction before the device goes to sleep. The
+Columbus Crew requires tablets to stay awake and ready to launch the CogBat for at least
+10-20 minutes of idle time. *If you are not able to set the sleep time to longer than
+5 minutes:*  
+
+Download the "Stay Alive! Keep screen awake" app through Google Play and install it on
+the tablet. Open the app and grant "App usage access" to Stay Alive! when prompted.
+On the main Stay Alive! Options screen, set "Keep screen on while charging and on
+battery". Select "Enable selected apps", "Keep screen on ONLY for selected apps", and
+then under "Select apps that will Stay Alive!", choose the CogBat.  
+
+
+# Schedule of repeating tasks
+[//]: # (What maintenance is required for device – how often should it be checked)
+
+
+# Data retrieval
+[//]: # (How to get the raw data from the device)
+
+
+# Data processing
+[//]: # (What software is required to download/view the data)
+[//]: # (Process for getting data into Smartabase (later))
+
+
+# Quality control
+
+Deviation reporting  
+Audits for patients/dat  
+
+
+# Plan for electronic archiving
+
+Data storage/security requirements  
+Data entry methods  
+Audits  
+
+
+# References
+
+
+# IRB protocols
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|171004             |10/04/2017     |First version                                         |
+
+
+[//]: # (Link URLs below:)
+
+[1]: https://osf.io/8mdfy/wiki/home/
+[2]: http://smile-docs.readthedocs.io/en/latest/
+[3]: https://osf.io/g7e3x/
+[4]: https://osf.io/4tzxn/

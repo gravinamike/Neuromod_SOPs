@@ -3,7 +3,7 @@ Cognitive Battery - Overview
 ----------------------------
 
 Author: Michael Gravina  
-Revision: 170918  
+Revision: 171003  
 
 
 # Purpose
@@ -17,9 +17,9 @@ Cognitive Battery. Instructions for the component tasks are handled in their own
  - The Cognitive Battery (or CogBat) is a set of computerized tasks for the Android operating
 system, running on the [SMILE experiment-writing library for Python][1]. Currently, the CogBat
 contains the following tasks:  
-    - Flanker
-    - Moving Dot
-    - Continuous Recognition
+    - [**Flanker**][2]
+    - [**Moving Dot**][3]
+    - [**Continuous Recognition**][4]
 
 
 # Assignment of responsibilities
@@ -43,9 +43,9 @@ No special qualifications required.
  - Android phone or tablet
  - USB transfer cable appropriate to the tablet
  - Cognitive Battery .apk installer file:
-     - [For general use][2]
-     - [For Cognitive Crew][3]
- - [Continuous Recognition image set][4]
+     - [For general use][5]
+     - [For Cognitive Crew][6]
+ - [Continuous Recognition image set][7]
 
 
 # Methods and procedures
@@ -117,11 +117,15 @@ that no sessions are lost and each session is identifiable by date and time.
 |**SOP Revision #** |**Date**       |**Description of change(s)**                          |
 |-------------------|---------------|------------------------------------------------------|
 |170918             |09/18/2017     |First version                                         |
+|171003             |10/03/2017     |Added links to other CogBat protocols                 |
 
 
 [//]: # (Link URLs below:)
 
 [1]: http://smile-docs.readthedocs.io/en/latest/
-[2]: https://osf.io/3zh7s/
-[3]: https://osf.io/g7e3x/
-[4]: https://osf.io/4tzxn/
+[2]: https://osf.io/ghcfm/wiki/home/
+[3]: https://osf.io/zj37w/wiki/home/
+[4]: https://osf.io/z9vnh/wiki/home/
+[5]: https://osf.io/3zh7s/
+[6]: https://osf.io/g7e3x/
+[7]: https://osf.io/4tzxn/

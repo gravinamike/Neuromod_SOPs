@@ -3,7 +3,7 @@ Cognitive Battery - Moving Dot
 ------------------------------
 
 Author: Michael Gravina  
-Revision: 170919 
+Revision: 171009  
 
 
 # Purpose
@@ -11,7 +11,11 @@ Revision: 170919
 This protocol contains procedures for using the Moving Dot task in the Cognitive Battery.  
 
 Moving Dot is set up to test time-constrained decision-making models where a subject must select
-among 2 competing options. On each trial, the subject is presented with a circular field which
+among 2 competing options. It is constructed to access decision-making and perceptual processing
+speeds, with a particular focus on signal-to-noise dynamics as the subject extracts the dominant
+signal among distracting information.  
+
+On each trial, the subject is presented with a circular field which
 contains dots moving in many directions. The subject's task is to indicate, quickly and
 accurately, whether more dots are moving right or left by pressing the interface
 (keys or touchscreen) in that direction.  
@@ -25,7 +29,7 @@ of many moving stimuli.
 
 Zero-coherence trials are a special case, since neither "left" nor "right" are correct. To
 keep the response set consistent with the rest of the trials, a direction is arbitrarily
-chosen to be "right". In this sense, zero-coherence trials approximate an extremely-low-
+chosen to be "correct". In this sense, zero-coherence trials approximate an extremely-low-
 coherence trial, where there is technically a correct answer, but it is effectively impossible
 to detect it.  
 
@@ -35,8 +39,8 @@ dominant direction of the stimuli, and reaction time data.
 
 # Terminology
 
- - The Cognitive Battery (or CogBat) is a set of computerized tasks for the Android operating
-system, running on the [SMILE experiment-writing library for Python][1]. 
+ - The [**Cognitive Battery (or CogBat)**][1] is a set of computerized tasks for the Android operating
+system, running on the [SMILE experiment-writing library for Python][2]. 
 
  - **The Cognitive Battery Moving Dot task** is a task within the CogBat.
 
@@ -53,7 +57,7 @@ No special qualifications required.
 
 # Required equipment and supplies
 
- - Android phone or tablet set up with the [Cognitive Battery app][2].
+ - Android phone or tablet set up with the [Cognitive Battery app][3].
 
 
 # Methods and procedures
@@ -72,8 +76,11 @@ Review the on-screen instructions with the subject and ask if they have any ques
 |**SOP Revision #** |**Date**       |**Description of change(s)**                          |
 |-------------------|---------------|------------------------------------------------------|
 |170919             |09/19/2017     |First version                                         |
+|171003             |10/03/2017     |Added links to other CogBat protocols                 |
+|171009             |10/09/2017     |Updated task rationale                                |
 
 
 
-[1]: http://smile-docs.readthedocs.io/en/latest/
-[2]: https://osf.io/g7e3x/
+[1]: https://osf.io/8mdfy/wiki/home/
+[2]: http://smile-docs.readthedocs.io/en/latest/
+[3]: https://osf.io/g7e3x/
