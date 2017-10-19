@@ -7,6 +7,17 @@ Revision: 170918
 Effective date: 09/18/2017  
 
 
+
+
+
+
+Protocols: how/when to properly abort and restart a run
+When aborting a run, do it the "right" way (Ctrl+C at the terminal)
+JoR now takes a certain amount of time to listgen, so plan on this when setting the subject up. 
+
+
+
+
 # Purpose
 
 

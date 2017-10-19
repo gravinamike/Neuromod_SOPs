@@ -7,10 +7,16 @@ Revision: 170918
 Effective date: 09/18/2017  
 
 
-Omegawave:
-Get Omegawave app (Angela will have the team login code) 
-Record live datastreaming, so it can be played back later.
-Get some dummy datasets
+
+
+
+
+Protocols: how/when to properly abort and restart a run
+When aborting a run, do it the "right" way (Ctrl+C at the terminal)
+
+
+
+
 
 
 

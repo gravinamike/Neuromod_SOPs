@@ -1,0 +1,82 @@
+﻿
+Write first, edit second
+You need to use a business writing style and be fairly descriptive. You will probably end up writing at least ten pages to make your point.
+
+
+
+
+Cognitive Battery - White paper
+------------------------------------------
+
+Author: Michael Gravina  
+
+
+# Introduction/summary
+
+
+You want to catch people right off the bat with your introduction. Pique their interest,
+and then tell them what they’re going to accomplish by reading your white paper. - argue
+a specific position or propose a solution to a problem - This means writing a summary
+of your white paper and including an organized list of topics. 
+
+Outline it
+
+
+# Background/problems
+
+List current approaches to cognitive assessment
+List why current approaches fail
+
+Computational models of cognitive processes, and cognitive tasks designed to dovetail
+with those models, offer an alternative to traditional assessments which promises to
+overcome these limitations. A computational model is not merely descriptive; it goes
+beyond simple *descriptions* and statistical summaries of behavior by positing
+specific processes which might underlie that behavior, then implementing similar
+processes *in silico* that can be presented with the same kind of input as the real
+subject. 
+This offers additional accuracy and specificity (explain how)
+And by re-implementing the very processes which we hope to study,
+computational models allow us to go beyond the actual data collected during an
+experiment and *predict* how a subject would behave in response to an entirely new
+set of conditions, based on how they reacted to those in the experiment and the
+assumed cognitive parameters which are extracted from the model.
+
+
+
+Why are we using these tasks:
+Validated standards which are amenable to computational modeling. Allow us to gain info
+from each trial rather than in aggregates. Cross-cognitive-domain sampling, and quick tasks.
+
+Domains: Attention. Perceptual decision. General decision. Reward learning. Working and long term memory. Inventory control processes.
+
+Analytical approach is what sets us apart. Not descriptive, generative and predictive.
+We implemented the processes we think underlie performance. Properly estimate uncertainty
+in performance and hypothesize about parametric changes that led to differences in
+performance. More accurate and more targeted interventions.
+
+
+# Solution
+
+How we've proven them out
+
+
+# Advertisement
+
+Fill your white paper with useful tips and information.
+How to use
+How to admin
+How long
+What data is received
+What can be interpreted from data 
+
+# Conclusion
+
+
+# Works Cited
+
+
+
+[1]: https://osf.io/8mdfy/wiki/home/
+[2]: http://smile-docs.readthedocs.io/en/latest/
+[3]: https://osf.io/g7e3x/
+
