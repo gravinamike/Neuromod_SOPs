@@ -20,7 +20,7 @@ The Phillips Respironics Actiwatch is a wearable medical device which features:
 
  - Actigraphy for monitoring circadian rythms and other sleep parameters  
  - Light sensing in both white and color channels  
- - Theoretical 60-day recording duration without charging or data offload
+ - Theoretical 60-day recording duration without charging or data offload  
  - Epoch lengths of (15s, 30s, 1m, 2m, or 5m)  
  - Scheduled reminders (shake and sound) along with an interface for subjects to
 enter up to 2 momentary scores (rating sleep quality, pain, etc.)  

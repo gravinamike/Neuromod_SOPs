@@ -7,6 +7,20 @@ Revision: 170918
 Effective date: 09/18/2017  
 
 
+
+FirstBeat BodyGuard 2
+How to download:
+https://support.firstbeat.com/en/support/solutions/articles/9000114000-how-to-upload-raw-rr-and-accelerometer-data-from-bodyguard-2-with-uploader-desktop-tool
+or?
+https://wellbeing.firstbeat.com/plugin-instructions/en.html
+Data collected every 80 milliseconds - X, Y, Z.
+R-R interval data in SDF file, can be read with Notepad and contains intervals in milliseconds
+https://lifestyle-global.firstbeat.com/fla/
+
+
+
+
+
 # Purpose
 
 

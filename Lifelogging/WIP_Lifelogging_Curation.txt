@@ -7,6 +7,57 @@ Revision: 170918
 Effective date: 09/18/2017  
 
 
+
+
+
+
+
+
+
+Lifelogging data is under cmlab/data/lifelog/Lifelog_2017/201706/
+
+Folders start with the subject ID (subjXXX), with the type of data appended:
+
+*subjXXX: Unforgettable.me and GPSLogger data. *
+The folder should contain:
+1. Approximately 21 files with YYYYMMDD.csv filename format. These are the GPSLogger GPS files.
+approximately 21 folders containing data by day.
+2. A number of .csv files with long GUID-style filenames containing the word "location". These are the U.me GPS files.
+3. Approximately 21 folders with YYYMMDD name format. These contain the bulk of the U.me data, sorted by day.
+4. Approximately 21 folders with subjXXX_dayDD format. These are the manually sorted image folders.
+
+*subjXXX_CogBat: The data from the Cognitive Battery that the subjects ran once daily during collection.*
+The folder should contain:
+1. Approximately 21 folders with YYYYMMDD_HHmmSS name format. These are timestamped according to time of collection and contain the slogs.
+
+*subjXXX_fMRI: The fMRI scan and task data.*
+The folder should contain:
+1. 1 folder in XXXXPS name format. This contains the scan data.
+2. 1 folder in subjXXX_Relive format. This contains the slogs for the "mentally reliving" SMILE task.
+3. 1 folder in subjXXX_RestingState format. This contains slogs for the resting state (black screen) SMILE task.
+
+*subjXXX_EEG: The EEG trace and task data.*
+The folder should contain:
+1. 12 EEG files: an .eeg, .vhdr, and .vmrk file each for task 1 (JoR), task 2(Timeline), and then another set for the post-task 10-second capture for each task.
+2. 1 folder in subjXXX_JoR name format, containing slogs for the JoR SMILE task.
+3. 1 folder in subjXXX_Timeline name format, containing slogs for the Timeline SMILE task.
+
+
+
+"DEFUNCT": Note that I originally sorted the files according to their Zulu-timestamp. However, that led to some files being mis-sorted to the wrong day. Since then I have corrected the sorting script to operate on Zulu-to-EST-converted timestamps. I'm in the middle of re-sorting the archives. This should be done by Monday.
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Purpose
 
 

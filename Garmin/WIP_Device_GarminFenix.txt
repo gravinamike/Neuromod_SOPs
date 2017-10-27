@@ -18,6 +18,37 @@ Effective date: 09/18/2017
 # Terminology
 
 
+
+
+Fenix 5 does not have the same instructions! Double-check everything you wrote below!
+Garmin Express to Garmin Connect website. (Delay use of Connect app, it's not working for iOS)
+
+
+Charging:
+Plug into computer using USB Micro-B cable anhd the charging cradle
+
+
+Always-on mode to show data all the time - Setup/Sensors/Mode/Always On
+
+GPS - hit Orange key, select Start GPS
+
+To save GPS, hit Back and then select Save Track
+
+Basecamp software www.garmin.com/basecamp
+
+Sync to Basecamp - connect to computer using cable, start Basecamp, follow on-screen instructions.
+
+Which profile to use? Hiking? Orange key, Setup/Profiles, select.
+
+
+There's a whole bunch of waypoint-and-route-setting and navigating-to-waypoint stuff, some pretty darn fancy, but that might not be useful.
+
+Other data is also downloaded to the device - for example, barometry, which could be useful for weather.
+
+
+
+
+
 # Assignment of responsibilities
 
 Operators:  
