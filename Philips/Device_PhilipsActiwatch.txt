@@ -115,6 +115,8 @@ for an extended period.*
 If storing for long periods, checking and recharging the battery every 5 months
 will help maintain performance. Do not let the device go uncharged for significantly
 longer than this, or you risk lockout, which requires manufacturer service to correct.  
+Do not let the watches charge for too too long. After charging and configuration, remove
+them from the charger. This will prevent a small risk of configuration corruption.  
 
 
 # Data retrieval

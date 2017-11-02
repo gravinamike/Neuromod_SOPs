@@ -7,6 +7,13 @@ Revision: 170918
 Effective date: 09/18/2017  
 
 
+
+
+When you retrieve phones, make sure to offload all GPSLogger files manually to be sure
+
+
+
+
 # Purpose
 
 

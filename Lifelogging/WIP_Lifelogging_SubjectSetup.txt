@@ -86,6 +86,12 @@ and try as much as possible to do the tasks near that time each day
 Ask the subject to review the Participant Instructions again the day that they
 begin data collection.
 
+Add instructions to Lifelogging setup to give subjects a CogBat demonstration and detailed instructions
+Just make sure they know that have to respond while the image is still on the screen.
+Start bringing a second, demo phone to show CogBat
+
+
+
 
 ## Pouch setup
 
