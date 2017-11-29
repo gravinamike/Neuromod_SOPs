@@ -89,7 +89,8 @@ begin data collection.
 Add instructions to Lifelogging setup to give subjects a CogBat demonstration and detailed instructions
 Just make sure they know that have to respond while the image is still on the screen.
 Start bringing a second, demo phone to show CogBat
-
+Instructions for CogBat - Run them to the end, do not quit out early!
+Add to protocols: Notify subjects to wiggle chargers, verify wifi. Also notify subjects that they should go all the way to the end of the CogBat.
 
 
 

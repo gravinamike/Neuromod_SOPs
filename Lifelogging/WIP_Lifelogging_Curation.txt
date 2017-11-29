@@ -11,6 +11,15 @@ Effective date: 09/18/2017
 
 
 
+Curation - make sure you have all GPSLogger files!
+When you recover the phone, just grab all the GPSLogger files at once.
+
+
+
+
+
+
+
 
 
 

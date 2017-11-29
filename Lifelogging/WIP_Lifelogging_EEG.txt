@@ -11,9 +11,19 @@ Effective date: 09/18/2017
 
 
 
-Protocols: how/when to properly abort and restart a run
-When aborting a run, do it the "right" way (Ctrl+C at the terminal)
+How to use the mid-run restarts:
+Exiting out always using Alt+Tab, Ctrl+C
+Using the trial counter script and what it means (it just counts the index so you have to do the math)
+Starting up again (changing the restart flag and the starting block/trial in the script, and remembering to reset them)
+Cautions when analyzing, including:
+JoR TrialInBlock starts at 1 no matter what, it seems, because of the way it is pulled just from the script indexes instead of through a dictionary. Be aware that this will need to be corrected in analyses!
+
 JoR now takes a certain amount of time to listgen, so plan on this when setting the subject up. 
+
+
+
+
+
 
 
 

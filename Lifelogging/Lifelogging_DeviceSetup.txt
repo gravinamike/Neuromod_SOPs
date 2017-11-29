@@ -3,8 +3,8 @@ Lifelogging - Device Setup
 --------------------------
 
 Author: Michael Gravina  
-Revision: 170920  
-Effective date: 09/20/2017  
+Revision: 171120  
+Effective date: 11/20/2017  
 
 
 # Purpose
@@ -134,7 +134,7 @@ Operator_________ Date____ /____ /__________
      - The MobiLock website allows you to log in and manage device profiles which can be
 assigned to multiple devices. We set up one device profile named "Standard".
          - On the "Edit Profile" screen for this profile, the Select Apps tab should show all
-of the above apps and the Clock app as both `Enabled` and `Visible on homescreen`.
+of the above apps and the Browser and Clock apps as both `Enabled` and `Visible on homescreen`.
          - On the "Optional settings" screen, `Allow users to access 'Wifi Connection'
 inside of app` and `Allow users to connect/disconnect from Wifi Network` should both be
 enabled.
@@ -173,6 +173,7 @@ Operator_________ Date____ /____ /__________
 |**SOP Revision #** |**Date**       |**Description of change(s)**                          |
 |-------------------|---------------|------------------------------------------------------|
 |170920             |09/20/2017     |First version                                         |
+|171120             |11/20/2017     |Updated MobilLock to show Browser app                 |
 
 
 

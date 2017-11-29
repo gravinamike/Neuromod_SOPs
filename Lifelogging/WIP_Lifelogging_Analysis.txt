@@ -7,6 +7,20 @@ Revision: 170918
 Effective date: 09/18/2017  
 
 
+
+Backing it up:
+
+mkdir backup
+rsync -av subj001 backup/
+Note the trailing slash
+
+
+
+
+
+
+
+
 # Purpose
 
 

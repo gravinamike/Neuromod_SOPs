@@ -7,6 +7,14 @@ Revision: 170918
 Effective date: 09/18/2017  
 
 
+
+
+Learn how this works: RSYNC backup for the entire Lifelogging archive
+
+
+
+
+
 # Purpose
 
 
