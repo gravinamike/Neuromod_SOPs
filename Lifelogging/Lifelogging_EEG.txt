@@ -1,0 +1,177 @@
+﻿Lifelogging - EEG experiments
+-----------------------------
+
+Author: Michael Gravina  
+Revision: 171130  
+Effective date: 11/30/2017  
+
+
+# Purpose
+
+This protocol describes the preparation and execution of the EEG portion of the Lifelogging
+study, comprising both the "Judgement of Recency" and "Timeline" experiments. These
+Python/SMILE-based experiments present the subject with autobiographical images from their
+own collection period and ask them to perform temporal judgements on the events those
+images depict. They are designed to be run with simultaneous EEG collection.  
+
+
+# Assignment of responsibilities
+
+A primary operator should be assigned to run the EEG experiments for each subject.
+
+Subject ID______________________ Operator name______________________________ Init______  
+
+
+# Required equipment and supplies
+
+ - Folder of subject images, curated according to the Lifelogging curation protocol
+ - [SMILE experiment-writing library for Python][1]
+ - [JoR Python script][2]
+ - [Timeline Python script][3]
+ - [print_last_trail Python script] [4]
+ - Encrypted thumb drive for data transfer
+
+IRB protocols
+
+
+# Methods and procedures
+
+## Preparing for the experiment
+
+The stimulus computer should be loaded up with the latest version of the JoR and
+EEG Python scripts (copy the "JoR_v4" and "Timeline" folders over from the Git repository).
+The subject's folder of 192 images curated by day of the study and half-day should be
+copied into each of these 2 folders and renamed "images".  
+
+On the stimulus computer, open 2 terminals and "cd" to the "JoR_v4" and the "Timeline"
+directories. On both terminals, enter the command `python main.py -s subjXXX` where
+XXX is the subject number, but do not hit Enter yet.  
+*(If you have opportunity before the subject arrives, it is recommended to test-run
+both scripts (as above,
+but without the "-s subjXXX" subject ID parameter) for a few stimuli to ensure that
+the provided stimuli work properly with the listgen scripts.)*  
+
+Prepare for EEG according to the standard protocols for your EEG center.  
+
+Operator_________ Date____ /____ /__________  
+
+
+## Running the experiment
+
+Once the subject is prepped for EEG and sat in front of the stimulus computer,
+inform them that they should wave at the camera if they have questions or are done
+with the current section of the experiment, and ask them to keep movement to a
+minimum. 
+Hit enter on the JoR_v4 terminal. After the listgen finishes working, you will be
+informed whether it was able to build a full stimulus set (84 image pairs in 4 blocks
+of 21) and, if so, asked whether you want to proceed. Press "y" and Enter to continue.  
+Review the instructions with the subject, ask if they have any questions, then ask
+them to wait while you begin EEG recording. Tell them they can start as you close
+the door. Watch for syncpulses and monitor the subject as they proceed with the
+experiment.  
+
+Operator_________ Date____ /____ /__________  
+
+
+After they have finished the JoR and you have collected the post-experiment 
+EEG file, run the Timeline experiment (very similar to the above, though there will
+not be a prompt to continue after the listgen).  
+
+Operator_________ Date____ /____ /__________  
+
+
+Once the experiments are complete, clean up and break down according to the
+standard protocols for your EEG center. Make note of any unusual events or
+discrepancies in the participant and data logs for the experiment.  
+
+Operator_________ Date____ /____ /__________  
+
+
+
+## Restarting an experiment mid-run
+
+As much as possible, you should plan and prepare to run the experiment in a single,
+continuous fashion. Interruptions are very problematic and risk inducing confounds
+in the data. 
+However, in the rare case where an unanticipated complication forces
+you to interrupt the experiment during the execution of one of the Python scripts and
+you will otherwise lose the subject data entirely, it is possible to abort and restart
+the scripts, using the following procedure.  
+
+ - Exit the script by pressing Alt+Tab (to switch from the SMILE display to the
+terminal), then pressing Ctrl+C at the terminal. Note that you *must* exit using this
+method to ensure that the current partial-run data is saved. Exiting using the "exit"
+button on a window, the Task Manager, or any other method risks losing the data up
+until the current point.  
+
+ - Determine the last block and trial numbers the script completed.
+The "print_last_trial.py" Python script can help with this. Copy the output file for the
+experiment (in the "data" folder for the experiment, of the form "JoR_v4_X.slog" or 
+"Timeline_v4_X.slog", where X is a number) into the folder with print_last_trial.py.
+At a terminal for that folder, run this command:
+`python print_last_trial.py [filename of the slog file]`.
+The script will print out a number, which counts the number of trials that completely
+finished. You will most likely have to do some math to figure out
+the information you need, which is the block number and the trial number within that
+block of the last-completed trial. Add 1 to the trial number you get to determine
+the trial you want to restart at (and if the experiment was at the end of a block
+when you aborted, add 1 to the block as well).  
+*Note that this script does not refer to whatever trial was onscreen when the script
+was aborted, but the one that finished right before it. It also refers
+to the **absolute** trial number since the beginning of the script, **not** the trial
+number within the run/block. Finally, the script only **counts** the trials, it does not
+refer to any internal trial IDs of the experimental script, so if for some reason you
+are running it on data that do not start from trial 1, the number will have to be
+adjusted accordingly.*  
+
+ - Open the experiment's "main.py" script using an editor like Atom, PsychoPy or
+Notepad. Scroll down to the section with the comment "# Information for picking up a
+run where it left off:". Change "continue_flag" to True from False, and change
+starting_block and starting_trial from 1 to the number of the run/block and
+within-block trial that you want to restart at. Save the script.  
+
+ - Restart the experimental script as normal. Start-up events, such as instructions,
+will replay as before, so instruct the subject to disregard them.
+Once the trials begin, they will restart from the block and trial you specified.  
+
+ - Note that the interruption happened, and at what block/trial, in the data logs.  
+
+ - Remember to reset the script's values to their defaults before you run
+another subject.  
+
+ - Caution for analysis: The .slog data file from a restarted experiment may or
+may not number the
+trials correctly, depending on the script. Be ready to detect and correct for
+any mis-numbering during analyses.  
+
+
+# Data retrieval/archiving
+
+After completion of the experiment, the EEG files should be downloaded from the
+EEG computer and uploaded to the Borg server under a folder named "subjXXX_EEG".
+The folders of .slog data files for the current subject should be downloaded
+from the stimulus computer and uploaded to the Borg server as well. They should
+be renamed to "subjXXX_JoR" and "subjXXX_Timeline" and placed into the
+"subjXXX_EEG" folder with the EEG trace files.  
+
+Subject data, including images, should be erased from the stimulus computer once
+the data has been backed up to Borg. A password-protected USB drive should be
+used for all transfers and should be cleared of data once the transfer is done.    
+
+Operator_________ Date____ /____ /__________  
+
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|171130             |11/30/2017     |First version                                         |
+
+
+[//]: # (Link URLs below:)
+
+[1]: http://smile-docs.readthedocs.io/en/latest/
+[2]: https://github.com/compmem/lifelogging_exp_code/
+[3]: https://github.com/compmem/lifelogging_exp_code/
+[4]: https://github.com/compmem/lifelogging_exp_code/

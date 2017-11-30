@@ -1,0 +1,116 @@
+﻿
+Empatica E4 - use
+-----------------
+
+Author: Michael Gravina  
+Revision: 171114  
+Effective date: 11/14/2017  
+
+
+# Purpose
+
+This protocol describes the setup and use of the Empatica E4 realtime monitor
+for the collection of physiological data.
+
+
+# Device features
+
+The Empatica E4 is a smartwatch-like wearable that continuously monitors:  
+
+ - Electrodermal activity (EDA, a proxy for sympathetic nervous arousal, stress,
+etc.)  
+ - 3-axis accelerometry  
+ - Body temperature through infrared thermopile  
+ - Blood Volume Pulse (BVP, or the phasic change in blood volume per heartbeat,
+derived from photoplethysmographic sensor. Can be used to calculate heart rate,
+heart rate variability, etc.)  
+
+The Empatica can stream data directly to a Bluetooth-enabled phone or tablet, or
+otherwise record data passively for later upload. When streaming, battery life is
+20 hours, which increases to 36 hours in passive recording mode.  
+
+Data is output as a package of .CSV files for each sensor stream, in simple
+format (one numeric value per timepoint).  
+
+
+A principal operator should be assigned for the maintenance, setup and data-
+retrieval on each E4.  
+
+Operator(s):  
+Name______________________________ Init______   Name______________________________ Init______  
+
+
+# Required equipment and supplies
+
+ - Empatica E4 physiological monitor
+ - EmpaticaRT app for tablet or smartphone, available on the Google Play store.
+ - Account login information for [Empatica Connect web-service][1]
+ - [Empatica Manager desktop app][2]
+ - USB Micro B transfer cable (provided)
+ - Charging cradle (provided)  
+
+
+# Methods and procedures
+
+
+## Recording
+
+Subjects should be instructed to wear the fully charged E4 on their non-dominant
+wrist, behind the wristbone, with the button on the inside (towards the body).
+The strap should be snug without being uncomfortable to maximize electrode
+contact.  
+
+To beging a recording session, hold the button down for 2 seconds (but not
+longer, or you may reset the monitor) until the light begins to blink green.  
+
+At this point, if you wish to stream the data to a device, quickly open the
+“EmpaticaRT” app on that device and press the “Start a new session” button.
+Hold the E4 near the device to allow discovery to occur. From the menu that
+appears, select, “Empatica E4 – (followed by a serial number)”. After a moment,
+real-time streaming of physiological data will begin.  
+
+If you do not begin streaming to a device within a few seconds after recording
+starts, the E4 will go into passive recording mode. This will preserve battery
+life, but if you want to live-stream again you will have to end the current
+session and start a new one.  
+
+To stop recording in either case (streaming or passive), hold the button for
+2 seconds.
+
+
+# Schedule of repeating tasks
+
+## Maintenance
+
+ - **Charging:**
+Connect the charging cradle to the USB Micro-B cable, and then connect the cable
+to a computer or wall charger. Place the E4 in the cradle. Charge time is less
+than 2 hours and charging should be done daily.  
+
+
+# Data retrieval
+
+Once a live-streamed recording session finishes, if the Bluetooth-connected
+device has an internet connection, it will automatically sync to the web
+service. If you are operating the E4 in passive recording mode, use the 
+[Empatica Manager][2] desktop app to sync data from the band to the web
+service.  
+
+To view the data after syncing, log into the [Empatica Connect web-service][1].
+Click on "Sessions" at the top of the page to view sessions by date. You can
+view the traces for each sensor by clicking on "View" or download the package
+of per-sensor .CSV files by clicking on "Download".  
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|171114             |11/14/2017     |First version                                         |
+
+
+
+[//]: # (Link URLs below:)
+
+[1]: https://www.empatica.com/connect/
+[2]: https://www.empatica.com/product-e4-download
