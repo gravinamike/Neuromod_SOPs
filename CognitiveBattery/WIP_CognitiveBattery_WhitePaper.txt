@@ -3,6 +3,8 @@ Write first, edit second
 You need to use a business writing style and be fairly descriptive. You will probably end up writing at least ten pages to make your point.
 
 
+WHICH/THAT
+
 
 
 Cognitive Battery - White paper
@@ -11,43 +13,122 @@ Cognitive Battery - White paper
 Author: Michael Gravina  
 
 
+
 # Introduction/summary
 
-
 You want to catch people right off the bat with your introduction. Pique their interest,
+
+
+## Outline of what's coming
+
 and then tell them what they’re going to accomplish by reading your white paper. - argue
 a specific position or propose a solution to a problem - This means writing a summary
 of your white paper and including an organized list of topics. 
 
-Outline it
+
+
+
+
+
+
 
 
 # Background/problems
 
-List current approaches to cognitive assessment
-List why current approaches fail
 
-Computational models of cognitive processes, and cognitive tasks designed to dovetail
-with those models, offer an alternative to traditional assessments which promises to
-overcome these limitations. A computational model is not merely descriptive; it goes
-beyond simple *descriptions* and statistical summaries of behavior by positing
-specific processes which might underlie that behavior, then implementing similar
-processes *in silico* that can be presented with the same kind of input as the real
-subject. 
-This offers additional accuracy and specificity (explain how)
-And by re-implementing the very processes which we hope to study,
-computational models allow us to go beyond the actual data collected during an
-experiment and *predict* how a subject would behave in response to an entirely new
-set of conditions, based on how they reacted to those in the experiment and the
-assumed cognitive parameters which are extracted from the model.
+## Current approaches to cognitive assessment, and why they fail
 
+### List current approaches to cognitive assessment
+
+#### Commercial
+
+Lumosity - https://www.lumosity.com/
+Billed as intervention ("brain training")
+
+CogniFit Inc. https://www.cognifit.com/cognitive-assessment/cognitive-test
+
+CogMed https://en.wikipedia.org/wiki/Cogmed
+
+Posit Science Corporation https://en.wikipedia.org/wiki/Posit_Science_Corporation
 
 
-Why are we using these tasks:
-Validated standards which are amenable to computational modeling. Allow us to gain info
-from each trial rather than in aggregates. Cross-cognitive-domain sampling, and quick tasks.
+#### NEED ACADEMIC APPROACHES FROM PER
 
-Domains: Attention. Perceptual decision. General decision. Reward learning. Working and long term memory. Inventory control processes.
+Cognitive intervention: http://www.mitpressjournals.org/doi/full/10.1162/jocn_a_01164
+
+
+### List why current approaches fail
+
+Cognitive assessments such as these simply aggregate performance
+scores from a variety of tasks. The weighting of these scores in the final
+metric is necessarily arbitrary, and many measurements which aren't
+directly relevant to the chosen outcome but may still contain valuable
+information about the processes which led to it, are neglected or underutilized.
+This approach of considering only the final outputs of behaviors, while
+treating the cognitive processes that *produce* those behaviors as black boxes,
+could be labeled comparatively "shallow". While such assessments are capabile of providing an
+objective bar for whether performance varies on some narrowly
+defined metric, they are of very limited use in determining *why*
+performance varies. They are also poorly
+generalizable; by collapsing all aspects of a task into a single feature, they
+make those aspects into invariable preconditions for future measurements and
+negate the assessment's value for even slight variations on the task.
+
+
+## Computational models offer a better alternative
+
+In comparison, mechanistic computational models of cognitive processes, with 
+cognitive tasks designed to dovetail with those models, offer alternatives
+to traditional assessments which are both explanatory and generalizable.
+
+A computational model doesn't merely describe results with a simple behavioral
+measure or even statistical summaries on such measures. Instead, it posits
+specific processes which might underlie the behavioral output and recreates these
+processes mathematically or *in silico*, simulating performance based on the
+same kind of input as the real subjects. If the performance of the simulation
+matches that of the actual subjects, the model is taken to have
+plausible explanatory value.
+
+
+The advantages are threefold.
+
+First, model-based methods aren't merely descriptive, they are predictive.
+By re-implementing the very processes which they hope to explain,
+computational models allow for extrapolation beyond the actual data collected during an
+experiment to prediction of how a subject would behave in response to entirely new
+conditions, based on the values of cognitive parameters extracted from the
+model and the actual stimuli.
+
+
+Second, model-based-methods are capable of increased accuracy as they can take
+much better advantage of the full spectrum of data types available from
+an experiment.
+a model is capable of producing predictions not only on a single performance
+measure but on multiple data types from each trial which may or may not 
+have any direct bearing on "performance" of focal interest. For example,
+in a memory task, the most obvious definition of "performance" is the overall
+proportion of correct responses,
+but other associated data types can readily be aquired from the same set of trials, such as
+response times, confidence ratings, brain sensing or eye-tracking data, etc.
+This additional information would either go to waste or be integrated in some
+arbitrary manner, such as a weighted sum of factors, in non-model-based
+assessments. With a model, in contrast, each of these sources of data can
+potentially be predicted alongside the focal measure, and the predictions
+can be checked against reality in order to hone the accuracy of the model through
+parameter adjustment.
+
+Third, model-based-methods are more generalizable and extensible than alternative methods.
+Because they offer a set of explicit internal parameters which are open to
+manipulation, rather than a hidden set of assumptions which must be maintained to
+preserve validity, models can be much more flexibly tailored to approximate new situations
+simply by adjusting parameters. And in cases where the model is simply not flexible
+enough to accomodate a novel situation, that lack of flexibility often readily suggests
+ways to improve upon the model.
+
+
+
+
+
 
 Analytical approach is what sets us apart. Not descriptive, generative and predictive.
 We implemented the processes we think underlie performance. Properly estimate uncertainty
@@ -55,26 +136,56 @@ in performance and hypothesize about parametric changes that led to differences 
 performance. More accurate and more targeted interventions.
 
 
+This offers additional accuracy and specificity (explain how)
+
+
+
+
+## Why are we using these tasks:
+Validated standards which are amenable to computational modeling. Allow us to gain info
+from each trial rather than in aggregates. Cross-cognitive-domain sampling, and quick tasks.
+
+### Overall meta-domain of "neurocapacity" is one of the focuses of our battery
+
+### Domains: Attention. Perceptual decision. General decision. Reward learning. Working and long term memory. Inventory control processes.
+
+
+
 # Solution
 
-How we've proven them out
+## How we've proven them out
+
 
 
 # Advertisement
 
 Fill your white paper with useful tips and information.
-How to use
-How to admin
-How long
-What data is received
-What can be interpreted from data 
+
+## Features
+
+### How long
+
+### What data is received
+
+### What can be interpreted from data 
+
+
+## Use
+
+### How to get
+
+### How to use
+
+### How to admin
+
+
+
 
 # Conclusion
 
 
+
 # Works Cited
-
-
 
 [1]: https://osf.io/8mdfy/wiki/home/
 [2]: http://smile-docs.readthedocs.io/en/latest/

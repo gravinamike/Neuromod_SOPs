@@ -6,6 +6,11 @@ Revision: 171130
 Effective date: 11/30/2017  
 
 
+De-coloning and shrinking images in EEG protocol
+
+
+
+
 # Purpose
 
 This protocol describes the preparation and execution of the EEG portion of the Lifelogging
