@@ -1,10 +1,10 @@
 ﻿
-TITLE
------
+Lifelogging - Curation
+----------------------
 
 Author: Michael Gravina  
-Revision: 170918  
-Effective date: 09/18/2017  
+Revision: 171207  
+Effective date: 12/07/2017  
 
 
 
@@ -18,42 +18,51 @@ When you recover the phone, just grab all the GPSLogger files at once.
 
 
 
+Curation scheme for image sets:
+-------------------------------
 
+<br>
 
+ - **Common to all experiments:**
+     - Verify that there is, natively, a uniform sampling across days in the archive (try and visualize the distribution of timestamps in Python)
+     - Pick out as many distinct episodes from the morning and afternoon of each day for each subject. At least 30 per day, 15 in the morning and 15 in the afternoon.
+     - Spatial distances should be sampled as much as possible, but we expect this to fall out pretty naturally if we ensure time is evenly sampled.
+     - Try and balance features - people/nopeople, inside/outside. Time and space most important. Exclude:
+Floors/ceilings/walls, Reflections of the subjects
 
+     - Do not repeat photos
+   
 
+<br>
 
-Lifelogging data is under cmlab/data/lifelog/Lifelog_2017/201706/
+  - **Replication of PNAS paper:**
+      - 21 days x 8 images per day (4 in the morning, 4 in the afternoon) = 168 images total
+      - Randomize the images.
+      - We do not want a time-block of time much greater than 7 minutes. Half a block of 84 images takes about 7.5 minutes. 4 time-blocks will exhaust all 168 images and take about 30 minutes.
+      - **File structure:**<br>
+        All image files should be collected into the same "images" folder within each SMILE experiment. This folder can be assembled from a folder structure of the sort used in Meredith's experiment (see below) using the  `grabImagesIntoOneFolder.py` script.
+    - **File preprocessing:**<br>
+        The `resizeImages.py` script should be used to resize all images to a standard height of 500 pixels (enter `python resizeImages.py folder` where `folder` is the directory containing all of the collected images for the experiment). Do this on the curated copies, NOT on the original images in the non-curated folders.
 
-Folders start with the subject ID (subjXXX), with the type of data appended:
+<br>
 
-*subjXXX: Unforgettable.me and GPSLogger data. *
-The folder should contain:
-1. Approximately 21 files with YYYYMMDD.csv filename format. These are the GPSLogger GPS files.
-approximately 21 folders containing data by day.
-2. A number of .csv files with long GUID-style filenames containing the word "location". These are the U.me GPS files.
-3. Approximately 21 folders with YYYMMDD name format. These contain the bulk of the U.me data, sorted by day.
-4. Approximately 21 folders with subjXXX_dayDD format. These are the manually sorted image folders.
-
-*subjXXX_CogBat: The data from the Cognitive Battery that the subjects ran once daily during collection.*
-The folder should contain:
-1. Approximately 21 folders with YYYYMMDD_HHmmSS name format. These are timestamped according to time of collection and contain the slogs.
-
-*subjXXX_fMRI: The fMRI scan and task data.*
-The folder should contain:
-1. 1 folder in XXXXPS name format. This contains the scan data.
-2. 1 folder in subjXXX_Relive format. This contains the slogs for the "mentally reliving" SMILE task.
-3. 1 folder in subjXXX_RestingState format. This contains slogs for the resting state (black screen) SMILE task.
-
-*subjXXX_EEG: The EEG trace and task data.*
-The folder should contain:
-1. 12 EEG files: an .eeg, .vhdr, and .vmrk file each for task 1 (JoR), task 2(Timeline), and then another set for the post-task 10-second capture for each task.
-2. 1 folder in subjXXX_JoR name format, containing slogs for the JoR SMILE task.
-3. 1 folder in subjXXX_Timeline name format, containing slogs for the Timeline SMILE task.
-
-
-
-"DEFUNCT": Note that I originally sorted the files according to their Zulu-timestamp. However, that led to some files being mis-sorted to the wrong day. Since then I have corrected the sorting script to operate on Zulu-to-EST-converted timestamps. I'm in the middle of re-sorting the archives. This should be done by Monday.
+  - **Meredith's experiment:**
+<br><br>
+     - Select images to balance across the following bins:
+         1. Which image is more recent (first or second image, 2 conditions)
+         2. Gap between images (6 conditions), "logarithmically" spaced:
+             - Within-morning/evening, between morning and evening, 1-2 days, 4-6 days, 8-12 days, 7 days (to explore cyclical patterns)
+             - Max gap of half experimental duration to avoid compound with bin set #1
+             - Includes at least a pair from each day to sample the supposed “temporal fovea”
+         3. Recency of the most recent (proximal and distal, for 3 conditions)
+            - Logarithmically spaced
+<br><br>
+    - The above will yield 36 different conditions (2 order x 6 gap x 3 recency). Include 2 of each condition in each block of 72 image pairs. At ~5s per trial/pair, that is 6 minutes per block. Running 4 blocks will take ~24 minutes.
+    - In the event that subjects are missing data for specific days, images should be pulled evenly from the remaining days in order to make up for the shortfall.
+    - **File structure:**<br>
+        The curated image files should be sorted into folders by day (named in format 'subj00X_dayXX', where XX is the left-zero-padded day of the study, starting at 01), and within each day folder into subfolders named 'morning' and 'afternoon'.
+    - **File preprocessing:**<br>
+        The `resizeImages.py` script should be used to resize all images to a standard height of 500 pixels (enter `python resizeImages.py folder` where `folder` is the directory containing the 21 day-level folders). Do this on the curated copies, NOT on the original images in the non-curated folders.
 
 
 
