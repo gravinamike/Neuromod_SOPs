@@ -1,0 +1,109 @@
+﻿
+Lifelogging - Data management
+-----------------------------
+
+Author: Michael Gravina  
+Revision: 171212  
+Effective date: 12/12/2017  
+
+
+
+# Purpose
+
+This protocol describes the management of the Lifelogging experimental data after it has been
+recovered from the Lifelogging devices and moved to the Borg server.
+
+
+
+# Required equipment and supplies
+
+ - Access to the Borg server
+
+
+
+# Methods and procedures
+
+
+## Archive structure  
+
+The Lifelogging data is located under `cmlab/data/lifelog/Lifelog_2017/201706/`. *(This
+is for the data associated with the subject group that started in June
+2017. Subsequent groups should have their own subfolder named for the month
+the group started.)*  
+
+Data folders start with the subject ID (subjXXX format), with the type of data
+appended after the name:  
+
+**subjXXX: Unforgettable.me and GPSLogger data.**  
+The finalized folder should contain:  
+1. Approximately 21 files with YYYYMMDD.csv filename format. These are
+the GPSLogger GPS files.  
+2. A number of .csv files with long GUID-style filenames containing
+the word "location". These are the U.me GPS files.  
+3. Approximately 21 folders with YYYMMDD name format. These contain
+the bulk of the U.me data, sorted by day.  
+4. Approximately 21 folders with subjXXX_dayDD format. These are the
+manually sorted image folders.  
+
+**subjXXX_CogBat: The data from the Cognitive Battery which the subjects ran
+once daily during collection.**  
+The finalized folder should contain:  
+1. Approximately 21 folders with YYYYMMDD_HHmmSS name format. These are
+timestamped according to time of collection and contain the .slog files.  
+
+**subjXXX_fMRI: The fMRI scan and task data.**  
+The finalized folder should contain:  
+1. 1 folder in XXXXPS name format. This contains the scan data.  
+2. 1 folder in subjXXX_Relive format. This contains the slogs for the
+"mentally reliving" SMILE task.  
+3. 1 folder in subjXXX_RestingState format. This contains slogs for
+the resting state (black screen) SMILE task.  
+
+**subjXXX_EEG: The EEG trace and task data.**  
+The finalized folder should contain:  
+1. 12 EEG files: an .eeg, .vhdr, and .vmrk file each for task 1 (JoR),
+task 2(Timeline), and then another set for the post-task 10-second capture
+for each task.  
+2. 1 folder in subjXXX_JoR name format, containing slogs for the JoR
+SMILE task.  
+3. 1 folder in subjXXX_Timeline name format, containing slogs for the
+Timeline SMILE task.  
+
+**"DEFUNCT"**:  
+Note that Mike originally sorted the files according to their Zulu-timestamp.
+However, that led to some files being mis-sorted to the wrong day. Since
+then he corrected the sorting script to operate on Zulu-to-EST-converted
+timestamps. This folder contains the original sorts, in case they are needed.  
+
+
+
+## Subject metadata file  
+
+Within the experimental archive there should also be maintained a file named
+Lifelogging_subject_records.csv. This file should be kept current with de-identified
+information for all subjects in the current group including:  
+
+ - Subj ID
+ - Collection notes
+ - Collection dates
+ - Device ID
+ - CogBat notes
+ - CCBBI ID
+ - fMRI date
+ - Scan protocols
+ - fMRI notes
+ - EEG date
+ - EEG notes
+ - JoR version (or version information for any other scripts if this varies within
+the group.  
+
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|171212             |12/12/2017     |First version                                         |
+
+
+[//]: # (Invisible comment)

@@ -7,6 +7,8 @@ Revision: 170918
 Effective date: 09/18/2017  
 
 
+Before analyzing: RSYNC backup for the entire Lifelogging archive
+
 
 Backing it up:
 
@@ -16,7 +18,9 @@ Note the trailing slash
 
 
 
-
+Within the experimental archive there should also be maintained a file named
+Lifelogging_subject_records.csv. Refer to this for information that may be pertinent to 
+the analyses.
 
 
 
