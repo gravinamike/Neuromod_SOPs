@@ -2,15 +2,26 @@
 Write first, edit second
 You need to use a business writing style and be fairly descriptive. You will probably end up writing at least ten pages to make your point.
 
+If Per's not even going to look at this until the end, don't wreck yourself trying to come up with
+citations for the sections he is expert on.
+
+
+Not formatted for citation manager - too short. I will handle citations manually
+Per - there is a deadline. (Make sure Angela knows as well that it is out to Per for edits).
+
+
+Before meeting with Per, format it based on his "how to write good" model
 
 WHICH/THAT
 
 
 
-Cognitive Battery - White paper
-------------------------------------------
+Cognitive Battery - White paper ############################## CHANGE THAT TITLE
+--------------------------------------------------------------------------------------------------------------------
 
 Author: Michael Gravina  
+
+
 
 
 
@@ -25,135 +36,306 @@ and then tell them what they’re going to accomplish by reading your white pape
 a specific position or propose a solution to a problem - This means writing a summary
 of your white paper and including an organized list of topics. 
 
-
-
-
-
-
-
-
-
-# Background/problems
-
-
-## Current approaches to cognitive assessment, and why they fail
-
-### List current approaches to cognitive assessment
-
-#### Commercial
-
-Lumosity - https://www.lumosity.com/
-Billed as intervention ("brain training")
-
-CogniFit Inc. https://www.cognifit.com/cognitive-assessment/cognitive-test
-
-CogMed https://en.wikipedia.org/wiki/Cogmed
-
-Posit Science Corporation https://en.wikipedia.org/wiki/Posit_Science_Corporation
-
-
-#### NEED ACADEMIC APPROACHES FROM PER
-
-Cognitive intervention: http://www.mitpressjournals.org/doi/full/10.1162/jocn_a_01164
-
-
-### List why current approaches fail
-
-Cognitive assessments such as these simply aggregate performance
-scores from a variety of tasks. The weighting of these scores in the final
-metric is necessarily arbitrary, and many measurements which aren't
-directly relevant to the chosen outcome but may still contain valuable
-information about the processes which led to it, are neglected or underutilized.
-This approach of considering only the final outputs of behaviors, while
-treating the cognitive processes that *produce* those behaviors as black boxes,
-could be labeled comparatively "shallow". While such assessments are capabile of providing an
-objective bar for whether performance varies on some narrowly
-defined metric, they are of very limited use in determining *why*
-performance varies. They are also poorly
-generalizable; by collapsing all aspects of a task into a single feature, they
-make those aspects into invariable preconditions for future measurements and
-negate the assessment's value for even slight variations on the task.
-
-
-## Computational models offer a better alternative
-
-In comparison, mechanistic computational models of cognitive processes, with 
-cognitive tasks designed to dovetail with those models, offer alternatives
-to traditional assessments which are both explanatory and generalizable.
-
-A computational model doesn't merely describe results with a simple behavioral
-measure or even statistical summaries on such measures. Instead, it posits
-specific processes which might underlie the behavioral output and recreates these
-processes mathematically or *in silico*, simulating performance based on the
-same kind of input as the real subjects. If the performance of the simulation
-matches that of the actual subjects, the model is taken to have
-plausible explanatory value.
-
-
-The advantages are threefold.
-
-First, model-based methods aren't merely descriptive, they are predictive.
-By re-implementing the very processes which they hope to explain,
-computational models allow for extrapolation beyond the actual data collected during an
-experiment to prediction of how a subject would behave in response to entirely new
-conditions, based on the values of cognitive parameters extracted from the
-model and the actual stimuli.
-
-
-Second, model-based-methods are capable of increased accuracy as they can take
-much better advantage of the full spectrum of data types available from
-an experiment.
-a model is capable of producing predictions not only on a single performance
-measure but on multiple data types from each trial which may or may not 
-have any direct bearing on "performance" of focal interest. For example,
-in a memory task, the most obvious definition of "performance" is the overall
-proportion of correct responses,
-but other associated data types can readily be aquired from the same set of trials, such as
-response times, confidence ratings, brain sensing or eye-tracking data, etc.
-This additional information would either go to waste or be integrated in some
-arbitrary manner, such as a weighted sum of factors, in non-model-based
-assessments. With a model, in contrast, each of these sources of data can
-potentially be predicted alongside the focal measure, and the predictions
-can be checked against reality in order to hone the accuracy of the model through
-parameter adjustment.
-
-Third, model-based-methods are more generalizable and extensible than alternative methods.
-Because they offer a set of explicit internal parameters which are open to
-manipulation, rather than a hidden set of assumptions which must be maintained to
-preserve validity, models can be much more flexibly tailored to approximate new situations
-simply by adjusting parameters. And in cases where the model is simply not flexible
-enough to accomodate a novel situation, that lack of flexibility often readily suggests
-ways to improve upon the model.
-
-
-
-
-
-
-Analytical approach is what sets us apart. Not descriptive, generative and predictive.
+-------
+The tasks are well known; Analytical approach is what sets us apart. Not descriptive, generative and predictive.
 We implemented the processes we think underlie performance. Properly estimate uncertainty
 in performance and hypothesize about parametric changes that led to differences in
 performance. More accurate and more targeted interventions.
-
-
-This offers additional accuracy and specificity (explain how)
-
+-------
 
 
 
-## Why are we using these tasks:
-Validated standards which are amenable to computational modeling. Allow us to gain info
-from each trial rather than in aggregates. Cross-cognitive-domain sampling, and quick tasks.
-
-### Overall meta-domain of "neurocapacity" is one of the focuses of our battery
-
-### Domains: Attention. Perceptual decision. General decision. Reward learning. Working and long term memory. Inventory control processes.
 
 
 
-# Solution
 
-## How we've proven them out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Current approaches to cognitive assessment and their shortcomings
+
+
+## Academic approaches
+
+The full constellation of cognitive assessments currently in use in academic and
+clinical settings is too numerous to list, but a non-exhaustive selection of common paradigms
+is listed in Table 1.  
+
+In addition to individual use for answering focal questions, cognitive
+assessments are now commonly grouped into batteries shaped for a specific purpose, such as
+detection of cognitive decline [1][1] [2][2], drug state [3][3], attentional disorders, affective disorders,
+OCD, schizophrenia, developmental disorders, neurodegenerative disease, cerebrovascular disorders,
+and traumatic brain injury [4][4].
+
+
+
+Table 1
+
+ - Grammatical, mathematical, and symbolic/logical reasoning
+ - Reaction time
+ - 2-choice decision making
+ - Associative learning
+ - Spatial and sequential working memory
+ - Visual and verbal recognition memory
+ - Matching grids and matching to sample
+ - Sequence recognition
+ - Multiple-choice decision making
+ - Go/no-go tasks
+ - Stroop-style tasks
+ - Task-switching
+ - Gambling tasks
+ - Emotion-recognition tasks
+
+Table 2
+
+Sample of test batteries (reproduced in part from [5][5]):
+ANAM Automated Neuropsychological Assessment Metrics  Memory, attention, psychomotor speed, language, RT
+CANTAB Cambridge Neuropsychological Test Automated Battery  Working memory, attention, visuospatial memory
+CNTB Computerized Neuropsychological Test Battery  Language, information-processing, motor speed, attention, spatial, memory
+CogState Working memory, executive function, attention, RT
+CSI Cognitive Stability Index  Memory, attention, response speed, processing speed
+MicroCog Memory, attention, RT, spatial ability, reasoning/calculation
+
+
+
+## Commercial offerings
+
+Recently, a new set of assessment tools has become available as part of a wave of
+commercial enthusiasm for what purports to be "brain training". The flagship firm in
+this movement, Lumosity, at one time marketed its computerized tests/games as both
+diagnostic tools and interventions with power to augment cognition, even in cognitive
+decline, but now (after controversy and an FTC settlement [8][8]) warns users that
+they are "not intended to diagnose, treat, cure, or prevent any disease"[9][9].
+Nonetheless, the company still offers its product as a platform for research [10][10].
+Lumosity is representative of the broader group of commercial offerings by groups like
+CogniFit [11][11], CogMed[12][12], and Posit Science Corporation [13][13]. 
+Common to most of these are a reliance on vague claims about neuroplasticity [14][14],
+[15][15] despite a lack of evidence of far-transfer effects beyond the specific tasks
+themselves [16][16].
+
+
+
+
+
+
+
+
+Cognitive intervention: http://www.mitpressjournals.org/doi/full/10.1162/jocn_a_01164
+
+However, while rigor may be lacking, these shouldn't be taken as a refutation of
+PERVASIVE (street level) computerized cognitive assessments in general (just as the spuriousness of the
+herbal supplement industry does not invalidate the idea that effective drugs do actually exist).
+
+
+While rigor in methods are wanting (akin to supplement industry), that does not
+mean that drugs don't work, and the burgeoning popular movement contains a
+valuable seed that could prove greatly beneficial if developed with
+rational design and standards for validation.
+
+We explain the rational design (intrinsic to model-based methods)
+Later, explain the standards for validation.
+
+
+
+
+### Explain why current approaches fail
+
+Cognitive assessments such as these simply aggregate performance
+scores from a variety of tasks. The weighting of these scores in the final
+metric is typically arbitrary. Moreover, many measurements which aren't
+directly relevant to the chosen outcome, but which may still contain valuable
+information about the processes which led to it, are neglected or underutilized.  
+
+This approach of considering only the final outputs of behaviors, while
+treating the cognitive processes that *produce* those behaviors as black boxes,
+could be labeled comparatively "shallow". While such assessments do provide an
+objective bar for whether performance varies on their narrowly
+defined metrics, they are of very limited use in determining *why*
+performance varies. They are also poorly
+generalizable; by collapsing all aspects of a task into a single feature, they
+make those aspects into invariable preconditions for future measurements and
+so negate the assessment's value for even slight variations on the task.
+
+
+
+## Computational models offer a better alternative  
+
+In comparison, mechanistic computational models of cognitive processes, with 
+cognitive tasks designed to dovetail with those models, offer alternatives
+to traditional assessments which are both explanatory and generalizable.  
+
+A computational model does not merely describe results with a simple behavioral
+measure or even statistical summaries on such measures. Instead, it posits
+specific *processes* which might underlie the behavioral output, then recreates these
+processes mathematically or *in silico*, simulating performance based on the
+same kind of input as the real subjects. If the performance of the simulation
+matches that of the actual subjects, the processes in the model are considered
+plausible as explanations for how the real-world performance is produced.  
+
+Going one step further, a computational model contains a set of variable
+parameters whose values start off unknown, and which are then estimated through
+a best-fit process against a subset of the data which the model is to
+account for. These parameters are not just abstractions, but represent actual
+aspects of the modeled process, and the best-fit values which are recovered for
+them may therefore provide useful information about the modeled system.  
+
+
+
+
+
+The advantages are threefold:  
+
+
+
+
+ 1. **Model-based methods aren't merely descriptive, they are generative and 
+predictive.** A cognitive model attempts to re-implement the actual processes thought
+to underlie performance, then generates new behavior by carrying out those
+processes on the same type of input that the subjects experience. This input
+doesn't have to be limited to actual stimuli experienced by real subjects in the
+past. A model can generate behavior based on entirely new input, allowing it
+to predict how the subject will respond to novel stimuli sets ahead of time.
+
+ 2. **Model-based methods enable informed speculation about the mechanistic causes
+of changes in performance.**
+Simple descriptive measures can identify *when* performance has changed, but not
+*why*. Cognitive models, on the other hand, contain internal parameters which
+can be monitored for changes that may explain variation in performance. 
+EXAMPLE
+
+ 3. **Model-based methods are more generalizable and extensible than alternatives.**
+Because they offer a set of explicit internal parameters which are open to
+manipulation, rather than a hidden set of assumptions which must be maintained to
+preserve predictive validity, models can be much more flexibly tailored to approximate new situations
+simply by adjusting those parameters. And in cases where the model is simply not flexible
+enough to accomodate a novel situation, this very lack of flexibility often suggests
+the most promising avenues for improving the the model.
+
+ 4. **Model-based methods offer increased accuracy.**
+By treating accessory measurements as potential sources of mechanistic
+constraint and gaining information from each individual trial rather
+than only from multi-trial aggregates, a computational model can make
+full use of available information that might otherwise be neglected or
+underutilized. As a result, model-based assessments can be considerably
+more accurate than the alternatives.  
+
+ 5. **Model-based methods allow for estimation of uncertainty in performance.**
+By running and rerunning a model on the same data set thousands of times, a distribution of
+probable performances can be constructed, representing the expected variability in
+a subject's performance. Observed variability can be interpreted in light of this
+expectation, so that changes in performance can be identified as informative or simply
+part of typical variation. 
+ASK PER IF THIS IS CORRECT IN PARTICULARS AND CONSEQUENCES
+
+
+
+In sum -
+Improved specificity (what is going wrong under the surface)
+Improved accuracy (how badly is it going wrong)
+Beyond abstract improvements in understanding, the functional import of the above is more
+accurate and more targeted interventions.
+
+
+
+
+
+## Computerization and the ethos of Ecological Momentary Assessement
+
+
+The increasing ubiquity, affordability, and power of mobile devices
+in recent years has led to the massive expansion of methods
+following the ethos of Ecological Momentary Assessment (EMA). 
+The main advantage of EMA is direct access to an individual's
+behavior and subjective self-reports in the natural environment, in
+contrast with methods carried out in a laboratory setting or
+at a time and place far-removed from the context of interest. This proximity
+allows for greater ecological validity and reduced recall bias.
+Moreover, EMA often takes advantage of other information channels, like
+mobile sensors, that can sample the environment at the same
+time as the assessment is performed and provide input into
+models of the fine-scaled processes leading to the measured behavior[6][6], [7][7].
+As a result, computerized task batteries designed with
+computational modeling in mind are ideally suited for
+EMA-style cognitive assessment.  
+
+However, out of the existing selection of cognitive assessment batteries, 
+many are not designed for use on mobile devices, or require administration
+by a trained technician [5][5]. In almost all cases, they are not intentionally
+set up for high levels of modularity, brevity, or ease-of-use. There is
+therefore a need for task batteries that possess do possess these qualities
+required for use in an EMA-style paradigm.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Solution - the CogBat
+
+
+## What the tasks are (why are we using these tasks in particular):
+
+###: Based on well-validated standards
+Validated standards which are amenable to computational modeling and which, in combination,
+cover the constructs of interest (Cross-cognitive-domain sampling)
+
+Focus: Overall focus on the meta-domain of "neurocapacity"
+Domains: Attention. Perceptual decision. General decision. Reward learning. Working and long term memory.
+Inventory control processes. Cognitive flexibility (task-switching). Inhibitory control.
+
+They also feature potentially quick tasks
+
+
+These have been used before - but previously they have not been modeled consistently, and rarely have they been integrated into a battery of complementary tasks.
+Together and in this format, they count as a type of EMA.
+
+Eriksen Flanker task (1974) for contextual inhibition of responses
+
+Random Dot Motion https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3310993/
+
+Continuous Recognition Memory task (Hannay & Levin, 1988)
+
+
+Wisconsin Card Sorting Test (1948, task-shifting test)
+The monetary version of WCST?
+Balloon Analogue Risk Task
+OBART
+
+
+
+
+## Features of the underlying models
+
+
+
+
+## How we've proven the tasks out
+
+Ran them against lots of subjects, measured them against other validated constructs,
+and validated that they can predict conditions of interest (for example, against
+Lifelogging data)
+
+NEED THIS INFO FROM PER (PREVIOUS AND CURRENT VALIDATIONS)
+
+
 
 
 
@@ -181,13 +363,28 @@ Fill your white paper with useful tips and information.
 
 
 
+
 # Conclusion
+
 
 
 
 # Works Cited
 
-[1]: https://osf.io/8mdfy/wiki/home/
-[2]: http://smile-docs.readthedocs.io/en/latest/
-[3]: https://osf.io/g7e3x/
+[1]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2645803/
+[2]: http://www.sciencedirect.com/science/article/pii/S0747563213003087
+[3]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181606/
+[4]: http://www.cambridgecognition.com/cantab/test-batteries/
+[5]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2645803/
+[6]: https://www.ncbi.nlm.nih.gov/pubmed/18509902
+[7]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5371716/
+[8]: https://www.ftc.gov/news-events/press-releases/2016/01/lumosity-pay-2-million-settle-ftc-deceptive-advertising-charges
+[9]: https://www.lumosity.com/hcp/research/completed
+[10]: https://www.lumosity.com/hcp
+[11]: https://www.cognifit.com/cognitive-assessment/cognitive-test
+[12]: https://en.wikipedia.org/wiki/Cogmed
+[13]: https://en.wikipedia.org/wiki/Posit_Science_Corporation
+[14]: https://www.cognifit.com/brain-plasticity-and-cognition
+[15]: https://www.cogmed.com/neuroplasticity
+[16]: http://longevity.stanford.edu/a-consensus-on-the-brain-training-industry-from-the-scientific-community/
 
