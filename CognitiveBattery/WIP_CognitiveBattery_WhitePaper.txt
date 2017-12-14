@@ -55,6 +55,49 @@ performance. More accurate and more targeted interventions.
 
 
 
+1. What's out there now
+
+(leads to discussion of EMA)
+
+2. 2 calls for next set of assessments:
+
+
+  a. Ecological (assessed very close to the context of interest, both in setting and time)
+
+
+(However, most academic/clinical, and pretty much all commercial, offerings
+simply try to detect associations between outcomes. They also 
+
+Contemporaneously with developments in the popularity of EMA,
+
+
+  b. Model-based 
+     (Evaluating a whole model of the process leading to an outcome)
+     (in contrast to methods that try to associate outcomes of different processes,
+     without referring to the underlying factors that produce those outcomes)
+
+
+Also talk about cross-domain collections of tasks and how they aren't currently well represented???? MAAAAYBE?
+
+
+
+3. So we have sought to produce...
+ - a computerized and portable task battery suitable to EMA
+ - containing tasks that are already modeled or are readily amenable to computational modeling,
+ - and which sample a wide variety of cognitive domains
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -113,16 +156,51 @@ MicroCog Memory, attention, RT, spatial ability, reasoning/calculation
 
 Recently, a new set of assessment tools has become available as part of a wave of
 commercial enthusiasm for what purports to be "brain training". The flagship firm in
-this movement, Lumosity, at one time marketed its computerized tests/games as both
+this movement, Lumosity, at one time marketed its computerized games as both
 diagnostic tools and interventions with power to augment cognition, even in cognitive
 decline, but now (after controversy and an FTC settlement [8][8]) warns users that
 they are "not intended to diagnose, treat, cure, or prevent any disease"[9][9].
 Nonetheless, the company still offers its product as a platform for research [10][10].
-Lumosity is representative of the broader group of commercial offerings by groups like
+Lumosity is representative of the broader set of commercial offerings by groups like
 CogniFit [11][11], CogMed[12][12], and Posit Science Corporation [13][13]. 
 Common to most of these are a reliance on vague claims about neuroplasticity [14][14],
 [15][15] despite a lack of evidence of far-transfer effects beyond the specific tasks
-themselves [16][16].
+in the batteries themselves [16][16].
+
+
+## Computerization and the ethos of Ecological Momentary Assessement
+
+However, the lack of rigor in the popular and commercial sectors should not be taken as
+a general refutation of computerized cognitive assessments that are integrated into the
+routine of everyday human lives (just as the spurious claims of the herbal supplement
+industry do not negate the immense utility of mainstream of pharmaceutical science).
+On the contrary, this burgeoning genre of games highlights increasing readiness for the
+development of "in-the-field" assessments with actual scientific merit that stems from
+a philosophy of rational design and solid standards of validation.
+
+Researchers in academic and clinical settings have already begun responding to this
+call. The increasing ubiquity, affordability, and power of mobile devices 
+in recent years has led to the massive expansion of methods following the ethos of
+Ecological Momentary Assessment (EMA). 
+The main advantage of EMA is direct access to an individual's
+behavior and subjective self-reports in the natural environment, in
+contrast with methods carried out in a laboratory setting or
+at a time and place far-removed from the context of interest. This proximity
+allows for greater ecological validity and reduced recall bias.
+Moreover, EMA often takes advantage of other information sources, like
+mobile sensors, that can sample the environment at the same
+time as the assessment is performed and provide input into
+models of the fine-scaled processes leading to the measured behavior[6][6], [7][7].
+As a result, computerized task batteries designed with
+computational modeling in mind are ideally suited for
+EMA-style cognitive assessment.  
+
+However, out of the existing selection of cognitive assessment batteries, ########################### REFINE - ARE THE BATTERIES LACKING, OR IS IT JUST THE PARTICULAR STYLE ABOVE THAT ARE FEW? BECAUSE THERE ARE LOTS OF EMA QUESTIONNAIRES. NOT SO MANY COMPUTERIZED TASK SETS I THINK... IN OTHER WORDS, THERE IS A SPECIFIC BIAS IN EMA TOWARDS SIMPLE, SHORT TESTS IN A SINGLE MODE, RATHER THAN COMPREHENSIVE BATTERIES.
+many are not designed for use on mobile devices, or require administration
+by a trained technician [5][5]. In almost all cases, they are not intentionally
+set up for high levels of modularity, brevity, or ease-of-use. There is
+therefore a need for task batteries that do possess these qualities
+required for use in an EMA-style paradigm.  
 
 
 
@@ -130,90 +208,49 @@ themselves [16][16].
 
 
 
+Explain rational design here:
 
-Cognitive intervention: http://www.mitpressjournals.org/doi/full/10.1162/jocn_a_01164
-
-However, while rigor may be lacking, these shouldn't be taken as a refutation of
-PERVASIVE (street level) computerized cognitive assessments in general (just as the spuriousness of the
-herbal supplement industry does not invalidate the idea that effective drugs do actually exist).
+## Computational models
 
 
-While rigor in methods are wanting (akin to supplement industry), that does not
-mean that drugs don't work, and the burgeoning popular movement contains a
-valuable seed that could prove greatly beneficial if developed with
-rational design and standards for validation.
+Simultaneous with the proliferation of EMA methods, there has recently been increased
+exploration of approaches to cognitive assessment that take advantage of computational models.
+Non-model-based analyses may venture post-hoc inferences about the factors that lead
+to the observable outputs of cognitive processes, but a computational model actually
+uses a mechanistic hypothesis as an investigatory tool in order to quantify latent
+variables that underlie those outputs and predict future observations
+ahead of time. If the performance of this simulated process (a mathematical formalism expressed in
+computer code) matches that of actual human subjects when fed the same inputs, then the
+hypothesis is considered a plausible explanation for how cognition operates in the real world.  
 
-We explain the rational design (intrinsic to model-based methods)
-Later, explain the standards for validation.
-
-
-
-
-### Explain why current approaches fail
-
-Cognitive assessments such as these simply aggregate performance
-scores from a variety of tasks. The weighting of these scores in the final
-metric is typically arbitrary. Moreover, many measurements which aren't
-directly relevant to the chosen outcome, but which may still contain valuable
-information about the processes which led to it, are neglected or underutilized.  
-
-This approach of considering only the final outputs of behaviors, while
-treating the cognitive processes that *produce* those behaviors as black boxes,
-could be labeled comparatively "shallow". While such assessments do provide an
-objective bar for whether performance varies on their narrowly
-defined metrics, they are of very limited use in determining *why*
-performance varies. They are also poorly
-generalizable; by collapsing all aspects of a task into a single feature, they
-make those aspects into invariable preconditions for future measurements and
-so negate the assessment's value for even slight variations on the task.
-
-
-
-## Computational models offer a better alternative  
+While methods that treat hidden cognitive processes as "black boxes" may
+provide an objective bar for whether performance varies on some narrowly-defined
+metric, they are comparatively poor at determining *why*. They are also poorly
+generalizable; by collapsing all aspects of the task into a single dimension of
+measurement, they implicitly make those particulars into preconditions
+for future measurements, limiting the assessment's value for even slight
+variations in context or mode of task performance.
 
 In comparison, mechanistic computational models of cognitive processes, with 
-cognitive tasks designed to dovetail with those models, offer alternatives
-to traditional assessments which are both explanatory and generalizable.  
-
-A computational model does not merely describe results with a simple behavioral
-measure or even statistical summaries on such measures. Instead, it posits
-specific *processes* which might underlie the behavioral output, then recreates these
-processes mathematically or *in silico*, simulating performance based on the
-same kind of input as the real subjects. If the performance of the simulation
-matches that of the actual subjects, the processes in the model are considered
-plausible as explanations for how the real-world performance is produced.  
-
-Going one step further, a computational model contains a set of variable
-parameters whose values start off unknown, and which are then estimated through
-a best-fit process against a subset of the data which the model is to
-account for. These parameters are not just abstractions, but represent actual
-aspects of the modeled process, and the best-fit values which are recovered for
-them may therefore provide useful information about the modeled system.  
+cognitive tasks designed to dovetail with those models, offer a number of advantages:
 
 
-
-
-
-The advantages are threefold:  
-
-
-
-
- 1. **Model-based methods aren't merely descriptive, they are generative and 
-predictive.** A cognitive model attempts to re-implement the actual processes thought
-to underlie performance, then generates new behavior by carrying out those
-processes on the same type of input that the subjects experience. This input
-doesn't have to be limited to actual stimuli experienced by real subjects in the
-past. A model can generate behavior based on entirely new input, allowing it
-to predict how the subject will respond to novel stimuli sets ahead of time.
-
- 2. **Model-based methods enable informed speculation about the mechanistic causes
-of changes in performance.**
-Simple descriptive measures can identify *when* performance has changed, but not
-*why*. Cognitive models, on the other hand, contain internal parameters which
-can be monitored for changes that may explain variation in performance. 
+ 2. **They are explanatory.**
+While methods that treat hidden cognitive processes
+as "black boxes" may still provide an objective bar for whether performance varies
+on some narrowly-defined metric, they are comparatively poor at determining *why*.
+The parameters of a cognitive model, on the other hand, enable informed speculation
+about the mechanistic causes of changes in performance because their fluctuations
+can be identified with specific changes in the factors underlying that performance.
 EXAMPLE
 
+ 1. **They are generative and predictive.** 
+A cognitive model doesn't merely describe existing observations, but can generate
+entirely new behavior. If stimuli are supplied to the model ahead of human
+testing, this generated behavior serves as a prediction of how the subjects will
+respond if their cognition operates according to the model's hypothesis.
+
+They are generalizable
  3. **Model-based methods are more generalizable and extensible than alternatives.**
 Because they offer a set of explicit internal parameters which are open to
 manipulation, rather than a hidden set of assumptions which must be maintained to
@@ -229,6 +266,10 @@ than only from multi-trial aggregates, a computational model can make
 full use of available information that might otherwise be neglected or
 underutilized. As a result, model-based assessments can be considerably
 more accurate than the alternatives.  
+
+On extending models to fmri and EEG
+https://turnermbcn.files.wordpress.com/2017/08/turnerrodrigueznorcia2016.pdf
+https://turnermbcn.files.wordpress.com/2017/08/lovecommentary2016.pdf
 
  5. **Model-based methods allow for estimation of uncertainty in performance.**
 By running and rerunning a model on the same data set thousands of times, a distribution of
@@ -250,35 +291,24 @@ accurate and more targeted interventions.
 
 
 
-## Computerization and the ethos of Ecological Momentary Assessement
-
-
-The increasing ubiquity, affordability, and power of mobile devices
-in recent years has led to the massive expansion of methods
-following the ethos of Ecological Momentary Assessment (EMA). 
-The main advantage of EMA is direct access to an individual's
-behavior and subjective self-reports in the natural environment, in
-contrast with methods carried out in a laboratory setting or
-at a time and place far-removed from the context of interest. This proximity
-allows for greater ecological validity and reduced recall bias.
-Moreover, EMA often takes advantage of other information channels, like
-mobile sensors, that can sample the environment at the same
-time as the assessment is performed and provide input into
-models of the fine-scaled processes leading to the measured behavior[6][6], [7][7].
-As a result, computerized task batteries designed with
-computational modeling in mind are ideally suited for
-EMA-style cognitive assessment.  
-
-However, out of the existing selection of cognitive assessment batteries, 
-many are not designed for use on mobile devices, or require administration
-by a trained technician [5][5]. In almost all cases, they are not intentionally
-set up for high levels of modularity, brevity, or ease-of-use. There is
-therefore a need for task batteries that possess do possess these qualities
-required for use in an EMA-style paradigm.  
 
 
 
 
+Cognitive assessments such as these simply aggregate performance
+scores from a variety of tasks. The weighting of these scores in the final
+metric is typically arbitrary. Moreover, many measurements which aren't
+directly relevant to the chosen outcome, but which may still contain valuable
+information about the processes which led to it, are neglected or underutilized.  
+
+
+
+Going one step further, a computational model contains a set of variable
+parameters whose values start off unknown, and which are then estimated through
+a best-fit process against a subset of the data which the model is to
+account for. These parameters are not just abstractions, but represent actual
+aspects of the modeled process, and the best-fit values which are recovered for
+them may therefore provide useful information about the modeled system.  
 
 
 
@@ -328,6 +358,8 @@ OBART
 
 
 ## How we've proven the tasks out
+
+Explain standards of validation here
 
 Ran them against lots of subjects, measured them against other validated constructs,
 and validated that they can predict conditions of interest (for example, against
