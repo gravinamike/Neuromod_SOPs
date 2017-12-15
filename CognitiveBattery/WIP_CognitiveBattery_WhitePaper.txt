@@ -231,84 +231,60 @@ measurement, they implicitly make those particulars into preconditions
 for future measurements, limiting the assessment's value for even slight
 variations in context or mode of task performance.
 
-In comparison, mechanistic computational models of cognitive processes, with 
-cognitive tasks designed to dovetail with those models, offer a number of advantages:
+In comparison, mechanistic computational models of cognitive processes offer a
+number of advantages:
 
 
- 2. **They are explanatory.**
+ 1. **They are explanatory.**
 While methods that treat hidden cognitive processes
-as "black boxes" may still provide an objective bar for whether performance varies
-on some narrowly-defined metric, they are comparatively poor at determining *why*.
+as "black boxes" may supply an objective bar of whether performance varies
+over some narrowly-defined metric, they are comparatively poor at determining *why*
+that variation exists.
 The parameters of a cognitive model, on the other hand, enable informed speculation
-about the mechanistic causes of changes in performance because their fluctuations
-can be identified with specific changes in the factors underlying that performance.
-EXAMPLE
+about the mechanistic causes of changes in performance. Their fluctuations
+(extracted by calculating the best-fit values to account for the observed data)
+can be linked to specific changes in the factors of cognition.  ###################### EXAMPLE?
 
- 1. **They are generative and predictive.** 
-A cognitive model doesn't merely describe existing observations, but can generate
-entirely new behavior. If stimuli are supplied to the model ahead of human
-testing, this generated behavior serves as a prediction of how the subjects will
-respond if their cognition operates according to the model's hypothesis.
+ 2. **They are generative and predictive.** 
+A cognitive model doesn't merely describe existing observations but can generate
+entirely new behavior. If novel stimuli are supplied to the model, this
+generated behavior predicts how human subjects will respond given the same
+inputs, assuming their cognition operates as the model supposes.  
 
-They are generalizable
- 3. **Model-based methods are more generalizable and extensible than alternatives.**
-Because they offer a set of explicit internal parameters which are open to
-manipulation, rather than a hidden set of assumptions which must be maintained to
-preserve predictive validity, models can be much more flexibly tailored to approximate new situations
-simply by adjusting those parameters. And in cases where the model is simply not flexible
-enough to accomodate a novel situation, this very lack of flexibility often suggests
-the most promising avenues for improving the the model.
+ 3. **They are generalizable and extensible.**
+Because they offer a set of visible parameters which can be adjusted, rather
+than hidden assumptions which must be maintained, models can readily be
+tailored to approximate new situations. And in cases where the model is simply
+not flexible enough to accomodate a novel situation, that inflexibility 
+may itself highlight the clearest avenue for improvement. Thus, computational
+models are more suited for generalization and extension than other methods
+of analysis. #################################################################################### ESPECIALLY BAYESIAN MODELING, OPEN TO NEW INFO AND INCREMENTAL IMPROVEMENTS
 
- 4. **Model-based methods offer increased accuracy.**
-By treating accessory measurements as potential sources of mechanistic
-constraint and gaining information from each individual trial rather
-than only from multi-trial aggregates, a computational model can make
-full use of available information that might otherwise be neglected or
-underutilized. As a result, model-based assessments can be considerably
-more accurate than the alternatives.  
+4. **They offer increased accuracy.**
+Computational models are well suited to making full use of available information
+that might otherwise be neglected or underutilized. They readily accept
+information at the per-trial level, rather than in aggregates across many trials
+which average out finer-scale variation. They can also be constrained with input
+from other testing modalities such as fMRI or EEG through the process of
+hierarchical, or joint, modeling [17][17], [18][18]. As a result of these
+additional sources of informational leverage, model-based assessments may be
+considerably more accurate than the alternatives.  
 
-On extending models to fmri and EEG
-https://turnermbcn.files.wordpress.com/2017/08/turnerrodrigueznorcia2016.pdf
-https://turnermbcn.files.wordpress.com/2017/08/lovecommentary2016.pdf
-
- 5. **Model-based methods allow for estimation of uncertainty in performance.**
-By running and rerunning a model on the same data set thousands of times, a distribution of
-probable performances can be constructed, representing the expected variability in
-a subject's performance. Observed variability can be interpreted in light of this
-expectation, so that changes in performance can be identified as informative or simply
-part of typical variation. 
-ASK PER IF THIS IS CORRECT IN PARTICULARS AND CONSEQUENCES
+ 5. **Model-based methods allow for characterization of uncertainty in performance.**
+By running and rerunning a computational model on the same data set thousands of
+times, a distribution of probable performances can be constructed, representing the
+expected variability in the performance of a real-world subject operating under
+the model's asumptions. Observed variability can be interpreted in light of this
+expectation, so that changes in performance can be identified as diagnostic of
+a particular brain condition or simply part of typical variation.  #############################ASK PER IF THIS IS CORRECT IN PARTICULARS AND CONSEQUENCES
 
 
+In sum, computational models offer more accuracy when it comes to describing
+cognitive performance and determining whether that performance deviates
+from expectations, plus much more specificity about *how* deviations are
+produced when they do occur. More accurate and specific assessments, in
+turn, facilitate more targeted interventions.
 
-In sum -
-Improved specificity (what is going wrong under the surface)
-Improved accuracy (how badly is it going wrong)
-Beyond abstract improvements in understanding, the functional import of the above is more
-accurate and more targeted interventions.
-
-
-
-
-
-
-
-
-
-Cognitive assessments such as these simply aggregate performance
-scores from a variety of tasks. The weighting of these scores in the final
-metric is typically arbitrary. Moreover, many measurements which aren't
-directly relevant to the chosen outcome, but which may still contain valuable
-information about the processes which led to it, are neglected or underutilized.  
-
-
-
-Going one step further, a computational model contains a set of variable
-parameters whose values start off unknown, and which are then estimated through
-a best-fit process against a subset of the data which the model is to
-account for. These parameters are not just abstractions, but represent actual
-aspects of the modeled process, and the best-fit values which are recovered for
-them may therefore provide useful information about the modeled system.  
 
 
 
@@ -320,16 +296,40 @@ them may therefore provide useful information about the modeled system.
 
 # Solution - the CogBat
 
+Given these trends, we have become aware of the unsatisfied need for:
+ 1. a portable, computerized task battery suitable to EMA-style assessment,
+ 2. containing tasks for which there are established computational models, or which
+are at least readily amenable to computational modeling.
 
-## What the tasks are (why are we using these tasks in particular):
+computational, and tasks designed to dovetail with...
+
+In addition, 
+ 3. and which sample a wide variety of cognitive domains (cross-domain collections of tasks) but particular focus on 
+
+Focus: Overall focus on the meta-domain of "neurocapacity"
+Domains: Attention. Perceptual decision. General decision. Reward learning. Working and long term memory.
+Inventory control processes. Cognitive flexibility (task-switching). Inhibitory control.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Selection of tasks (why are we using these tasks in particular):
 
 ###: Based on well-validated standards
 Validated standards which are amenable to computational modeling and which, in combination,
 cover the constructs of interest (Cross-cognitive-domain sampling)
 
-Focus: Overall focus on the meta-domain of "neurocapacity"
-Domains: Attention. Perceptual decision. General decision. Reward learning. Working and long term memory.
-Inventory control processes. Cognitive flexibility (task-switching). Inhibitory control.
 
 They also feature potentially quick tasks
 
@@ -419,4 +419,6 @@ Fill your white paper with useful tips and information.
 [14]: https://www.cognifit.com/brain-plasticity-and-cognition
 [15]: https://www.cogmed.com/neuroplasticity
 [16]: http://longevity.stanford.edu/a-consensus-on-the-brain-training-industry-from-the-scientific-community/
+[17]: https://turnermbcn.files.wordpress.com/2017/08/turnerrodrigueznorcia2016.pdf
+[18]: https://turnermbcn.files.wordpress.com/2017/08/lovecommentary2016.pdf
 
