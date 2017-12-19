@@ -1,22 +1,6 @@
 ﻿
-Write first, edit second
-You need to use a business writing style and be fairly descriptive. You will probably end up writing at least ten pages to make your point.
 
-If Per's not even going to look at this until the end, don't wreck yourself trying to come up with
-citations for the sections he is expert on.
-
-
-Not formatted for citation manager - too short. I will handle citations manually
-Per - there is a deadline. (Make sure Angela knows as well that it is out to Per for edits).
-
-
-Before meeting with Per, format it based on his "how to write good" model
-
-WHICH/THAT
-
-
-
-Cognitive Battery - White paper ############################## CHANGE THAT TITLE
+Cognitive Battery - White paper ############################## CHANGE TITLE
 --------------------------------------------------------------------------------------------------------------------
 
 Author: Michael Gravina  
@@ -30,27 +14,6 @@ Author: Michael Gravina
 You want to catch people right off the bat with your introduction. Pique their interest,
 
 
-## Outline of what's coming
-
-and then tell them what they’re going to accomplish by reading your white paper. - argue
-a specific position or propose a solution to a problem - This means writing a summary
-of your white paper and including an organized list of topics. 
-
--------
-The tasks are well known; Analytical approach is what sets us apart. Not descriptive, generative and predictive.
-We implemented the processes we think underlie performance. Properly estimate uncertainty
-in performance and hypothesize about parametric changes that led to differences in
-performance. More accurate and more targeted interventions.
--------
-
-
-
-
-
-
-
-
-
 
 
 
@@ -62,32 +25,65 @@ performance. More accurate and more targeted interventions.
 2. 2 calls for next set of assessments:
 
 
-  a. Ecological (assessed very close to the context of interest, both in setting and time)
+Over the past decade, cognitive psychology has thrust itself into the public
+sphere in unprecedented ways, including the debut of a spate of commercial
+tools that claim to assess or even augment various dimensions of human
+cognition. Although both the theory and the efficacy of these products has
+been called into deep question, their very existence demonstrates that there is
+a significant, unsatisfied appetite for measures of cognitive functioning.
+This may owe some credit to growing public awareness of the powerful developments
+that have occurred in cognitive neuroscience over the last 10 to 15 years (cites?
+BRAIN initiative, etc.?). It's even more plausible that much of this
+enthusiasm stems from an aging population which increasingly worries about
+the impact that neurodegenerative disease may have on future wellness. 
+
+Whatever the reason,######################################################################
+
+simultaneously with two other transformative developments: first, a steady
+increase in ubiquitious mobile computing power which can be exploited to bring
+assessments into the domain of everyday life, and second, the growth of the
+field of cognitive modeling which has the potential to magnify the power of
+those assessments dramatically. There is now a clear opportunity in the
+development of computerized assessment
+batteries that follow Ecological Momentary Assessment principles
+(where the assessment is carried out very close to the context of
+interest in both time and setting) and whose component tasks are either selected
+or custom-built to dovetail with computational cognitive models that can explain
+the behaviors these tasks solicit in terms of depper cognitive processes.
+
+We recommend for this purpose the Sederberg Cognitive Battery (SederBat).####################
 
 
-(However, most academic/clinical, and pretty much all commercial, offerings
-simply try to detect associations between outcomes. They also 
-
-Contemporaneously with developments in the popularity of EMA,
-
-
-  b. Model-based 
-     (Evaluating a whole model of the process leading to an outcome)
-     (in contrast to methods that try to associate outcomes of different processes,
-     without referring to the underlying factors that produce those outcomes)
-
-
-Also talk about cross-domain collections of tasks and how they aren't currently well represented???? MAAAAYBE?
 
 
 
-3. So we have sought to produce...
  - a computerized and portable task battery suitable to EMA
  - containing tasks that are already modeled or are readily amenable to computational modeling,
  - and which sample a wide variety of cognitive domains
 
 
 
+
+
+
+
+
+and then tell them what they’re going to accomplish by reading your white paper. - argue
+a specific position or propose a solution to a problem - This means writing a summary
+of your white paper and including an organized list of topics. 
+
+-------
+The tasks are well known; Analytical approach is what sets us apart. Not descriptive, generative and predictive.
+We implemented the processes we think underlie performance. Properly estimate uncertainty
+in performance and hypothesize about parametric changes that led to differences in
+performance. More accurate and more targeted interventions.
+
+
+
+
+
+
+Use Per's presentation
 
 
 
