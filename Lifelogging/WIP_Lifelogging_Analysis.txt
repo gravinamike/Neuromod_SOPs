@@ -22,7 +22,7 @@ Within the experimental archive there should also be maintained a file named
 Lifelogging_subject_records.csv. Refer to this for information that may be pertinent to 
 the analyses.
 
-
+Consider whether pics on the server should be stored in the same form they're shown to subjects? After all, we shrink them. Will it affect analyses if they're not shrunk before analysis?
 
 
 # Purpose

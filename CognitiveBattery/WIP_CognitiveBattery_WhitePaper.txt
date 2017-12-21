@@ -7,23 +7,7 @@ Author: Michael Gravina
 
 
 
-
-
-# Introduction/summary
-
-You want to catch people right off the bat with your introduction. Pique their interest,
-
-
-
-
-
-
-1. What's out there now
-
-(leads to discussion of EMA)
-
-2. 2 calls for next set of assessments:
-
+# Introduction
 
 Over the past decade, cognitive psychology has thrust itself into the public
 sphere in unprecedented ways, including the debut of a spate of commercial
@@ -37,67 +21,28 @@ BRAIN initiative, etc.?). It's even more plausible that much of this
 enthusiasm stems from an aging population which increasingly worries about
 the impact that neurodegenerative disease may have on future wellness. 
 
-Whatever the reason,######################################################################
-
-simultaneously with two other transformative developments: first, a steady
-increase in ubiquitious mobile computing power which can be exploited to bring
+Whatever the reasons, this has unfolded simultaneously with two other
+transformative developments: first, a steady
+increase in ubiquitious mobile computing power, which can be exploited to bring
 assessments into the domain of everyday life, and second, the growth of the
-field of cognitive modeling which has the potential to magnify the power of
+field of cognitive modeling, which has the potential to magnify the power of
 those assessments dramatically. There is now a clear opportunity in the
 development of computerized assessment
 batteries that follow Ecological Momentary Assessment principles
 (where the assessment is carried out very close to the context of
 interest in both time and setting) and whose component tasks are either selected
 or custom-built to dovetail with computational cognitive models that can explain
-the behaviors these tasks solicit in terms of depper cognitive processes.
+the behaviors these tasks solicit in terms of deeper cognitive processes.
 
-We recommend for this purpose the Sederberg Cognitive Battery (SederBat).####################
-
-
-
-
-
- - a computerized and portable task battery suitable to EMA
- - containing tasks that are already modeled or are readily amenable to computational modeling,
- - and which sample a wide variety of cognitive domains
-
-
-
-
-
-
-
-
-and then tell them what they’re going to accomplish by reading your white paper. - argue
-a specific position or propose a solution to a problem - This means writing a summary
-of your white paper and including an organized list of topics. 
-
--------
-The tasks are well known; Analytical approach is what sets us apart. Not descriptive, generative and predictive.
-We implemented the processes we think underlie performance. Properly estimate uncertainty
-in performance and hypothesize about parametric changes that led to differences in
-performance. More accurate and more targeted interventions.
-
-
-
-
-
-
-Use Per's presentation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+For this purpose we recommend the Sederberg Cognitive Battery (SederBat),####################
+a Python-based task battery which is readily deployed on the Android mobile
+operating system. The tasks in the SederBat sample a broad set of
+cognitive domains and are well-characterized by existing computational
+models developed for this purpose, allowing users to properly quantify
+uncertainty in performance measurements, determine whether apparent changes
+in performance are real or artifactual, and hypothesize intelligently about
+the parametric changes that led to actual changes. These benefits of
+the SederBat ultimately facilitate more accurate and targeted intervention
 
 
 
@@ -209,7 +154,7 @@ Explain rational design here:
 ## Computational models
 
 
-Simultaneous with the proliferation of EMA methods, there has recently been increased
+Simultaneously with the proliferation of EMA methods, there has recently been increased
 exploration of approaches to cognitive assessment that take advantage of computational models.
 Non-model-based analyses may venture post-hoc inferences about the factors that lead
 to the observable outputs of cognitive processes, but a computational model actually
@@ -308,6 +253,58 @@ Inventory control processes. Cognitive flexibility (task-switching). Inhibitory 
 
 
 
+Neurocapacity is always in flux
+
+Key is to tap into as many cognitive processes as possible
+Attention, perceptual processing, decision making, working memory,
+long-term memory, inhibitory control, reward learning.
+
+While still keeping the number of tasks low and maintaining the ability
+to capture trial-level behavior with computational models.
+
+
+Flanker (great example)
+LCA model
+Shrinking spotlight model, with spotlight shrink rate driven by evidence/
+conflict
+
+Trial and results (model fit responses very well)
+
+Moving Dots
+
+Describe ContRecog
+Same category
+New/old
+Short/long lag
+
+BART
+
+
+Bayesian Analyses:
+RunDEMC
+
+
+
+More on fitting violin-plot posterior predictives on top of per-trial performance,
+then using these to determine magnitude of "real" between-trial differences
+
+
+More on fitting violin-plot posteriors onto parameter estimates in order to see
+what accounts for differences.
+
+
+
+We have developed a system of tracking NeuroCapacity that makes two important advances:
+We can quantify uncertainty in performance so that we know when there are significant changes
+When there are significant changes, the model parameters tell us how the cognitive processes are different
+We will now be able to relate fluctuations in NeuroCapacity, both within and between subjects, to real-world experience.
+
+
+
+
+Real-life experience-sampling with Lifelogging-style wearables.
+Because on mobile, very well-integrated with the CogBat (handling the cognitive
+outputs) and the sensors (handling context, physical and physio info)
 
 
 
