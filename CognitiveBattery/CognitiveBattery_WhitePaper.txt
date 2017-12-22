@@ -1,0 +1,400 @@
+﻿
+
+Cognitive Battery - White paper ############################## CHANGE TITLE
+-------------------------------
+
+Author: Michael Gravina  
+
+
+
+# Introduction
+
+Over the past decade, cognitive science has thrust itself into the public
+sphere in unprecedented ways, including the debut of a spate of commercial
+tools that claim to assess or even augment different dimensions of human
+cognition. Although both the theory and the efficacy of these products has
+been called deeply into question, their very existence demonstrates that there is
+a significant, unsatisfied appetite for concrete measures of cognitive functioning.
+This may owe something to growing public awareness of the powerful developments
+that have occurred in cognitive neuroscience over the last 10 to 15 years (cites?
+BRAIN initiative, etc.?). Certainly at least some of this enthusiasm also
+stems from the worries of an aging population that increasingly worries about
+the impact that neurodegenerative disease may have on their future wellness. 
+
+Whatever the reasons, this surge in attention on cognitive assessment has
+unfolded simultaneously with two other transformative developments: first, a steady
+increase in ubiquitious mobile computing power, which can be exploited to bring
+assessments into the domain of everyday life; and second, the growth of the
+field of cognitive modeling, which has the potential to magnify the power of
+those assessments dramatically. There is now clear opportunity in the
+development of computerized assessment
+batteries that follow Ecological Momentary Assessment principles
+(where the assessment is carried out very close to the context of
+interest in both time and setting) and whose component tasks are either selected
+for, or custom-built to dovetail with, computational cognitive models that can explain
+the behaviors these tasks solicit in terms of deeper cognitive processes.
+
+We recommend the Sederberg Cognitive Battery (SederBat),
+a Python-based task battery which is readily deployed on the Android mobile
+operating system, as embodying each of these criteria. The tasks in the
+SederBat sample a broad set of
+cognitive domains and are well-characterized by existing computational
+models developed for this purpose, allowing users to properly quantify
+uncertainty in performance measurements, determine whether apparent changes
+in performance are real or artifactual, and hypothesize intelligently about
+the parametric changes that led to actual changes. These benefits of
+the SederBat ultimately facilitate more accurate and targeted cognitive interventions.
+
+
+
+
+# Current approaches to cognitive assessment
+
+
+## Research settings
+
+The full constellation of cognitive assessments currently in use in academic and
+clinical settings is too numerous to list, but a non-exhaustive selection of common paradigms
+is listed in Table 1.  
+
+Table 1
+
+ - Grammatical, mathematical, and symbolic/logical reasoning
+ - Reaction time
+ - 2-choice decision making
+ - Associative learning
+ - Spatial and sequential working memory
+ - Visual and verbal recognition memory
+ - Matching grids and matching to sample
+ - Sequence recognition
+ - Multiple-choice decision making
+ - Go/no-go tasks
+ - Stroop-style tasks
+ - Task-switching
+ - Gambling tasks
+ - Emotion-recognition tasks
+
+In addition to individual use for answering focal questions, cognitive
+assessments are now commonly grouped into batteries shaped for a specific purpose, such as
+detection of cognitive decline [1][1] [2][2], drug state [3][3], attentional disorders, affective disorders,
+OCD, schizophrenia, developmental disorders, neurodegenerative disease, cerebrovascular disorders,
+and traumatic brain injury [4][4].
+
+Table 2
+
+Sample of test batteries (reproduced in part from [5][5]):
+
+ - ANAM Automated Neuropsychological Assessment Metrics  Memory, attention, psychomotor speed, language, RT
+ - CANTAB Cambridge Neuropsychological Test Automated Battery  Working memory, attention, visuospatial memory
+ - CNTB Computerized Neuropsychological Test Battery  Language, information-processing, motor speed, attention, spatial, memory
+ - CogState Working memory, executive function, attention, RT
+ - CSI Cognitive Stability Index  Memory, attention, response speed, processing speed
+ - MicroCog Memory, attention, RT, spatial ability, reasoning/calculation
+
+
+
+## Commercial offerings
+
+Recently, a new set of assessment tools has become available as part of a wave of
+commercial enthusiasm for what purports to be "brain training". The flagship firm in
+this movement, Lumosity, at one time marketed its computerized games as both
+diagnostic tools and interventions with power to augment cognition, even in cognitive
+decline, but now (after controversy and an FTC settlement [8][8]) warns users that
+they are "not intended to diagnose, treat, cure, or prevent any disease"[9][9].
+Nonetheless, the company still offers its product as a platform for research [10][10].
+Lumosity is representative of the broader set of commercial offerings by groups like
+CogniFit [11][11], CogMed[12][12], and Posit Science Corporation [13][13]. 
+Common to most of these are a reliance on vague claims about neuroplasticity [14][14],
+[15][15] despite a lack of evidence of far-transfer effects beyond the specific tasks
+in the batteries themselves [16][16].
+
+
+## Computerization and the ethos of Ecological Momentary Assessement
+
+However, the lack of rigor in the popular/commercial sector should not be taken as
+a general refutation of computerized cognitive assessments that are designed to be integrated into the
+routine of everyday human life (just as the spurious claims of the herbal supplement
+industry do not negate the immense utility of mainstream of pharmaceutical science).
+On the contrary, this burgeoning genre of games highlights increasing readiness for the
+development of "in-the-field" assessments with actual scientific merit that stems from
+a philosophy of rational design and solid standards of validation.
+
+Researchers in academic and clinical settings have already begun responding to this
+call. The increasing ubiquity, affordability, and power of mobile devices 
+in recent years has led to the massive expansion of methods following the ethos of
+Ecological Momentary Assessment (EMA). 
+The main advantage of EMA is direct access to an individual's
+behavior and subjective self-reports *in the natural lived environment*, in
+contrast with methods carried out at a time and place far-removed from the
+context of interest, such as a laboratory setting weeks later. This proximity
+allows for greater ecological validity and reduced recall bias.
+Moreover, EMA often takes advantage of other information sources, like
+mobile sensors, that can sample the environment at the same
+time as the assessment is performed and provide input into
+models of the fine-scaled processes leading to the measured behavior[6][6], [7][7].
+As a result, computerized task batteries designed with
+computational modeling in mind are ideally suited for
+EMA-style cognitive assessment.  
+
+However, out of the existing selection of cognitive assessment batteries,
+many are not designed for use on mobile devices, or require administration
+by a trained technician [5][5]. Of those that can be easily administered
+through a mobile app, many are collections of subjective questionnaires. In
+comparison, there are currently few arrays of behavior-mining tasks that sample
+a broad and complementary set of cognitive dimensions while also being
+set up for high levels of modularity, brevity, or ease-of-use. There is
+therefore a need for task batteries that do possess these qualities
+required for use in an EMA-style paradigm.  
+
+
+## Computational models
+
+Simultaneously with the proliferation of EMA methods, there has recently been increased
+exploration of approaches to cognitive assessment that take advantage of computational models.
+Non-model-based analyses may venture post-hoc inferences about the factors that lead
+to the observable outputs of cognitive processes, but a computational model actually
+uses a mechanistic hypothesis as an investigatory tool in order to quantify latent
+variables that underlie those outputs and predict future observations
+ahead of time. If the performance of this simulated process -- a mathematical formalism expressed in
+computer code -- matches that of actual human subjects when both are fed the same inputs, then the
+hypothesis is considered a plausible explanation for how cognition operates in the real world.  
+
+In comparison to methods that treat hidden cognitive processes as "black
+boxes", mechanistic computational models of cognitive processes offer a
+number of advantages:
+
+
+ 1. **They are generative and predictive.** 
+A cognitive model doesn't merely describe existing observations but can generate
+entirely new behavior. If novel stimuli are supplied to the model, this
+generated behavior predicts how human subjects will respond given the same
+inputs.
+
+ 2. **They offer increased accuracy.**
+Computational models are well suited to making full use of available information
+that might otherwise be neglected or underutilized. They readily accept
+information at the per-trial level, rather than in aggregates across many trials
+that average out finer-scale variation. They can also be constrained with input
+from other testing modalities such as fMRI or EEG through the process of
+hierarchical, or joint, modeling [17][17], [18][18]. As a result of these
+additional sources of informational leverage, model-based assessments may be
+considerably more accurate than the alternatives.  
+
+ 3. **They allow for characterization of uncertainty in performance.**
+By running and rerunning a computational model on the same data set thousands of
+times, a distribution of probable performances can be constructed, representing the
+expected variability in the performance of a real-world subject operating under
+the model's asumptions. Observed variability can be interpreted in light of this
+expectation, so that it can be determined whether changes in the cognitive
+measurement are significant or merely part of expected variation. In contrast,
+methods that treat cognitive processes as "black boxes" may also supply an
+objective bar of whether performance varies, but are far more susceptible to
+false-positives due to noise in the instrument itself.
+
+ 5. **They are explanatory.**
+"Black box" methods are also comparatively poor at determining *why* changes
+in performance occur even after those changes are firmly established.
+The parameters of a cognitive model, on the other hand, enable informed speculation
+about the mechanistic causes of changes in performance. Their fluctuations
+(extracted by calculating the best-fit values to account for the observed data)
+can be linked to specific changes in the factors of cognition. 
+
+
+In sum, computational models offer more accuracy when it comes to describing
+cognitive performance and determining whether that performance deviates
+from expectations, plus much more specificity about *how* deviations are
+produced when they do occur. More accurate and specific assessments, in
+turn, facilitate more targeted interventions.
+
+
+
+# The SederBat
+
+Given these trends, we have become aware of the unsatisfied need for:
+ 1. a portable, computerized task battery suitable to EMA-style assessment,
+ 2. containing tasks for which there are established computational models, or that
+are at least readily amenable to computational modeling.
+
+In response, we have developed the Sederberg Cognitive Battery (SederBat), which
+comprises both a task-set and accompanying computational models that are designed
+to dovetail with those tasks. Both are implemented using the highly accessible Python
+programming language, though the task set is available on mobile devices through
+installers for the Android operating system. The cognitive tasks in the battery
+have been selected to tap into as wide a variety of cognitive domains as possible,
+but with a particular focus on those that factor into the "meta-domain" of
+neurocapacity, which is a major topical focus in research on age- and trauma-related
+cognitive decline, cognitive ergonomics, etc. 
+
+Table 3
+Some cognitive domains sampled in the SederBat:
+
+ - Attention
+ - Perceptual decision
+ - General decision
+ - Reward learning
+ - Working memory
+ - Long term memory
+ - Inventory control processes
+ - Cognitive flexibility (task-switching)
+ - Inhibitory control
+
+Neurocapacity is often conceptualized as a finite resource whose supply is constantly
+in flux and which is required for
+the operation of a host of critical cognitive processes. (CITE!) Better understanding of
+how this resource is utilized and replenished would therefore be of immense value and
+accessing it is one of the main design goals of the SederBat. However, because 
+of the wide variety of cognitive domains thought to be involved in it, 
+the battery will incidentally be well-equipped for many research focuses outside the
+specific confines of neurocapacity.
+
+The design of the Sederbat also aims to achieve this cross-cogntive-domain sampling through
+a low number of total tasks (3 in the current implementation) that are also
+relatively short in duration. This reduces task
+burden on the subjects, making EMA-style assessments (where tasks may be
+performed several times throughout the day and in a variety of different
+environments) much more feasible. Therefore, we have focused on developing
+multi-domain tasks that draw on a wide variety of cognitive processes
+simultaneously, and on models that can extract maximal information from
+individual trials rather than requiring very long, uninterrupted runs of
+trials to work.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+## Selection of tasks
+
+These tasks are based on well-validated standards, modified to satisfy the
+criteria described above:
+
+ - **Flanker**
+Based on the Eriksen Flanker task (CITE, 1974) of contextual inhibition.
+Accesses: Attention, perceptual decision, general decision, inhibitory control
+The subject's task is to indicate the direction of a central arrow, suppressing
+prepotent reponses from flanking symbols that may be directionally congruent,
+opposite, or neutral. Decision and response time data are collected.
+
+
+ - **Moving Dot**
+Based on the Random Dot Motion paradigm [19][19].
+Accesses: Attention, perceptual decision, general decision, inhibitory control
+The subject's task is to indicate the direction of the majority of dots in a
+field of moving dots. This requires the extraction of the dominant directional
+signal from irrelevant noise, with varying degrees of difficulty based on varying
+degrees of coherence in the dot motion. Decision and response time data are collected.
+
+
+ - **Continuous Recognition**
+Based on the Continuous Recognition Memory task (Hannay & Levin, 1988)
+Accesses: General decision, working memory, long term memory
+The subject's task is to assign images to old or new categories based on
+whether they have been experienced before, with varying lags between
+repetitions in order to observe delay effects. The image sets also contain
+task-irrelevant baits, such as images that come from the same semantic
+category but are not identical. Decision and response time data are collected.
+
+
+ - **O-BART (under development)**
+Derived from Balloon Analogue Risk Task (CITE) with task-shifting elements
+similar to Wisconsin Card Sorting Test (CITE 1948)
+Accesses: General decision, reward learning, cognitive flexibility (task-switching)
+The subject's task is to collect as much money as possible by pumping air into
+a balloon which may or may not pop. This requires a trial-by-trial evaluation of
+risk versus reward, as well as estimation of hidden risk and reward tendencies
+from noisy processes, and occasional task-switching from positive reward trials to
+negative pay-to-play trials. Decision and response time data are collected
+alongside value, pump, risk, and other trial-level game state information.
+
+
+
+
+## Features of the models
+
+Flanker as the representative example
+LCA model basis
+Shrinking spotlight, with shrink rate driven by evidence/conflict
+
+
+
+
+
+## Demonstration/proving out the system
+
+Short description of Bayesian analysis, RunDEMC
+
+
+Standards of validation here
+
+Measurements against established and validated constructs
+
+Demonstrations that the model can generate observed behavioral patterns (Flanker example, model fit responses very well)
+
+
+More on fitting violin-plot posterior predictives on top of per-trial performance,
+then using these to determine magnitude of "real" between-trial differences
+Quantify uncertainty in performance so that we know when there are significant changes
+
+
+More on fitting violin-plot posteriors onto parameter estimates in order to see
+what accounts for differences.
+When there are significant changes, the model parameters tell us how the cognitive processes are different
+EXAMPLE of linking parameter fluctuations to specific changes in factors of cognition in Flanker
+
+
+Demonstrations that the parameter estimates can predict conditions of interest (i.e., diminished
+neurocapacity because of environmental complexity)
+Relate fluctuations in parameters to real-world experience
+Experience-sampling with Lifelogging-style wearables (also highlight compatibility
+between Lifelogging tech and mobile-based assessments like this) with the CogBat handling the cognitive
+outputs and the sensors handling context, physical and physio info
+
+
+
+
+
+## Basic guide for using the system
+
+### How to get
+
+### How to use
+
+### How to admin
+
+
+
+
+
+# Summary
+
+
+
+
+
+
+
+
+
+
+
+# Works Cited
+
+[1]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2645803/
+[2]: http://www.sciencedirect.com/science/article/pii/S0747563213003087
+[3]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181606/
+[4]: http://www.cambridgecognition.com/cantab/test-batteries/
+[5]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2645803/
+[6]: https://www.ncbi.nlm.nih.gov/pubmed/18509902
+[7]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5371716/
+[8]: https://www.ftc.gov/news-events/press-releases/2016/01/lumosity-pay-2-million-settle-ftc-deceptive-advertising-charges
+[9]: https://www.lumosity.com/hcp/research/completed
+[10]: https://www.lumosity.com/hcp
+[11]: https://www.cognifit.com/cognitive-assessment/cognitive-test
+[12]: https://en.wikipedia.org/wiki/Cogmed
+[13]: https://en.wikipedia.org/wiki/Posit_Science_Corporation
+[14]: https://www.cognifit.com/brain-plasticity-and-cognition
+[15]: https://www.cogmed.com/neuroplasticity
+[16]: http://longevity.stanford.edu/a-consensus-on-the-brain-training-industry-from-the-scientific-community/
+[17]: https://turnermbcn.files.wordpress.com/2017/08/turnerrodrigueznorcia2016.pdf
+[18]: https://turnermbcn.files.wordpress.com/2017/08/lovecommentary2016.pdf
+[19]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3310993/
+
+
