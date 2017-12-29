@@ -1,0 +1,146 @@
+---
+title: How to be good and write with Markdown and Pandoc
+author: Per B. Sederberg
+date: January 28, 2017
+abstract: Writing is hard. The last thing we need is to have to struggle with formatting, citations, mathematical notation, collaboration, and, finally, converting a document to the whims of a journal. This document provides a guide for *a* solution to these problems that we follow in the Ohio State University Computational Memory lab. 
+header-includes:
+    - \usepackage{lineno,hyperref,geometry}
+    - \modulolinenumbers[5]
+    - \linenumbers
+    - \usepackage{setspace} 
+    - \doublespacing
+    - \geometry{letterpaper, margin=1.25in}
+    - \usepackage[sc,osf]{mathpazo}
+    - \linespread{1.025}
+    - \usepackage[euler-digits,small]{eulervm}
+...
+
+# Introduction
+
+Before you go any further, please read the following excellent tutorial, which provides the background, philosophy, and introduction to the specific approach we follow in the OSU Computational Memory lab for writing documents (this is a clickable link in a PDF or Word doc):
+
+[Sustainable Authorship in Plain Text Using Pandoc and Markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)
+
+Also please note that this document is a "living document", which we will continue to improve based on feedback from the users of this approach. Feel free to make comments (see `Insert -> Comment`) and suggestions (you can change to Suggest Mode) right in the document.
+
+# Key Pieces
+
+In order to follow the suggested writing workflow we will use the following software:
+
+1) Google Drive/Docs
+2) Pandoc
+3) LaTeX (optional)
+4) Zotero (optional)
+
+I go into a little more detail motivating each below.
+
+## Google Drive/Docs
+
+While it's possible to write in MarkDown format with any plain text editor, we use Google Drive/Docs for writing primarily because of its fantastic collaboration capabilities. Google Doc's real-time collaboration, offline-mode, comments, and suggest mode make for a really great way to work on documents collaboratively in a way that is better than any other system I have found. I believe these benefits outweigh the negatives, some of which are that Google Docs does not let you have custom syntax highlighting, there is no Git integration for version control, it doesn't work well with offline editors, and it doesn't do real-time WYSIWYG formatting. If the latter list is more important to you than the former list, then I suggest you look into www.authorea.com instead of what I propose in this document.
+
+### Installation
+
+There is nothing to install, but you do need a Google account. Then just visit https://drive.google.com
+
+## Pandoc
+
+This amazing library does all the heavy-lifting of converting from MarkDown to other document formats, such as LaTeX/PDF and Microsoft Word. With the help of some addon filters (one of the great features of Pandoc), you can also get nice equation and figure numbering and, most importantly, citation insertion and formatting with any Citation Style Language (CSL) file. Again, Pandoc isn't perfect, but there are many document publishing websites that use Pandoc for conversion like I'm proposing here, so it's likely one of the better solutions.
+
+### Installation
+
+You can get everything that you want on [the Pandoc website](http://pandoc.org/installing.html). On linux machines you should probably install with your package manager like this:
+
+    sudo aptitude install pandoc pandoc-citeproc pandoc-data python-pandocfilters
+
+To get fancy figure, equation, and table numbering you'll also need to install the following pandoc filters, which happen to be written in Python: pandoc-fignos, pandoc-eqnos, and pandoc-tablenos. As long as you have Pandoc and Python installed (either Anaconda on Windows and OSX or via our package manager on Linux) you should be able to install them with pip:
+
+    pip install pandoc-fignos
+    pip install pandoc-eqnos
+    pip install pandoc-tablenos
+
+One thing to note is that wherever you install these filters the must end up on both you PYTHON PATH and PATH. That is the first thing to check if they throw an error saying they are not found.
+
+## LaTeX
+
+In order to convert to beautifully formatted PDF documents you will need to have LaTeX installed. You may ask why we go through this entire process instead of just using LaTeX from the start? The main reasons are: 
+
+1) LaTeX does not look as nice in Google Docs, whereas MarkDown is designed to look good as plain text. 
+2) It's syntax is much more difficult to learn and use, which also makes it much harder to debug.
+3) Many publishing companies strongly prefer not to accept LaTeX and PDF documents and we can get really nice Word documents from Pandoc.
+
+### Installation
+
+Again, Pandoc gives LaTeX installation instructions on their [website](http://pandoc.org/installing.html), and if you're on linux you should install LaTeX with your package manager (on Debian-based systems this is the texlive package, with many related packages that provide additional capabilities.)
+
+## Zotero
+
+If you are not already using Zotero, you should start. It is an reference manager that provides a browser plugin that will automatically import any article into your database with the click of a button when you are browsing the article online. It's remarkably useful given 99.9% of the articles I find are via the web. 
+
+Within the current writing workflow, we use Zotero to generate a BibTeX file for adding citations to our document. As outlined below, citing in Pandoc MarkDown relies on the BibTeX key, which is a unique identifier for each reference. We use a scheme for BibTeX keys that makes them human-readable and very much like APA format. Luckily there is a plugin (Better BibTeX) that takes care of renaming all your BibTeX keys when you export citations from your Zotero library.
+
+### Installation
+
+Although it can be installed right into Firefox, I've taken to using the standalone version, which you can download and installed from the [Zotero website](www.zotero.org). You also need to sign up for an account. If you are affiliated with the OSU Computational Memory Lab, please request to be added to the CompMem group once you have an account (just send me an email with your zotero username). That way we can share references through Zotero.
+
+To make use of Better BibTeX for generating the BibTeX keys of our choosing, you can install it following their [instructions](https://github.com/retorquere/zotero-better-bibtex/wiki/Installation). Once installed go to the Preferences in Zotero, click the Better BibTeX tab and enter `[auth.etal].[year]` for the *Citation key format*. I also like to ensure the *Force citation key to ASCII* box is checked, too.
+
+# Writing
+
+Again, I will assume that you have read the fantastic summary article linked at the top of this document, which gives you the basics of writing in Pandoc MarkDown. In this section I will review the pieces that are specific to scientific manuscripts and to the special features of our approach.
+
+## Citations
+
+Pandoc has excellent support for citations with BibTeX keys, which you can convert between styles with CSL files. The most common citations are references in parentheses at the end of a sentence [@Sederberg.etal.2008]. You can list more than one article by separating the references with a semicolon [@Sederberg.etal.2011; @Nielson.etal.2015]. You can also make inline citations with @Sederberg.etal.2008 provided the foundational work for @Sederberg.etal.2011. See the Pandoc documentation (http://pandoc.org/MANUAL.html) for examples of all the ways to cite stuff.
+
+## Figures with captions
+
+You can insert figures with captions, but we have to use the Pandoc add-on pandoc-fignos to automatically handle the figure numbering and references.
+
+![*Example figure with caption.* Here is how to write a figure with a caption. You can insert multiple image types, including PNG and PDF. Figures will be inserted to fill the complete width of the page, though you can request a width as a percentage (see the end of the caption). The tag after the pound sign is key for referencing the figure in the text.](figs/example.png){#fig:example width=50%}
+
+Now it's easy to reference figures in the text. We can say, Figure {@fig:example} provides a nice illustration of inserting figures with captions.
+
+## Equations
+
+One of the great features of LaTeX is the beautiful typesetting of equations. You don't lose any of that with the approach outlined here. Pandoc MarkDown has full support for LaTeX math and even has the ability to convert it to MathType in Microsoft DocX files, which can greatly reduce the likelihood of publishers making errors.
+
+Similar to figures, the one shortcoming is the lack of auto equation numbering and references, so that you don't have to worry about keeping track of the numbers as you add and remove equations. Luckily, there is also a Pandoc filter for equations, which you use like this:
+
+$$ t_i = \rho t_{i-1} + t^{IN}. $$ {#eq:context}
+
+You can then reference the equations in your text, like Equation {@eq:context}. You can also have inline equations like $t_i$ to refer to variables or full equations (Note the use of one dollar sign instead of two.)
+
+# Publishing
+
+Once you're ready to look at a formatted document you need to pull all the pieces together and compile them. If you only have one file, simply pick `File -> Download as -> Plain Text (.txt)`.
+
+If you have citations, which you probably do if you are writing a scientific manuscript,  you can choose from a pile of citation styles (as CSL files) from https://www.zotero.org/styles. 
+You also need to download your BibTeX file from Zotero by right-clicking on the Collection you want to download and selecting `Export Collection`. A dialog will come up where you select `Better BibTeX` and click `OK`, which will bring up a File Dialog for saving the .bib file to disk.
+
+Once you have downloaded all the necessary files you can compile them into a LaTeX document with:
+
+    pandoc -s -S --filter pandoc-fignos --filter pandoc-tablenos \
+        --filter pandoc-eqnos --filter pandoc-citeproc \
+        --bibliography=HowToWriteGood.bib --csl=apa.csl \
+        HowToWriteGood.txt -o HowToWriteGood.tex
+
+then you can compile the LaTeX to a PDF document by running this a couple times (it takes a couple times to build all the references and links:
+
+    pdflatex HowToWriteGood
+    pdflatex HowToWriteGood
+
+If you'd like to create a Microsoft DocX file you can run this one command:
+
+    pandoc -s -S --filter pandoc-fignos --filter pandoc-tablenos \
+        --filter pandoc-eqnos --filter pandoc-citeproc \
+        --bibliography=HowToWriteGood.bib --csl=apa.csl \
+        HowToWriteGood.txt -o HowToWriteGood.docx
+
+
+# Use Cases
+
+What types of documents should you write with this approach? Primarily this should be used for manuscripts of all forms, including journal articles, book chapters, and even your dissertation. You can also use it for grants. Eventually I hope to have a nice letter template.
+
+# References
+
+

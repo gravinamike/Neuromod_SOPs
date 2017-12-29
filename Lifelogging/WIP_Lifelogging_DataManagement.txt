@@ -8,6 +8,13 @@ Effective date: 12/12/2017
 
 
 
+Curation - make sure you have all GPSLogger files!
+When you recover the phone, just grab all the GPSLogger files at once.
+
+
+
+
+
 # Purpose
 
 This protocol describes the management of the Lifelogging experimental data after it has been
