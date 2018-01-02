@@ -1,0 +1,205 @@
+﻿
+Lifelogging - Subject Setup
+---------------------------
+
+Author: Michael Gravina  
+Revision: 180102  
+Effective date: 01/02/2018  
+
+
+# Purpose
+
+This protocol describes the setup of a human subject with the Lifelogging device for a
+period of data collection and Cognitive Battery tasking.  
+
+
+# Terminology
+
+ - The Lifelogging device is a wearable phone that passively collects image, audio
+(obfuscated), accelerometry, and GPS data during the wearer's everyday life. It also
+provides a vehicle for deploying the Cognitive Battery, which requires the wearer to
+periodically start an app and perform active cognitive tests.  
+
+ - The Cognitive Battery (or CogBat) is a set of computerized tasks for the Android operating
+system, running on the [SMILE experiment-writing library for Python][1]. 
+
+
+# Assignment of responsibilities
+
+A principal operator should be assigned to set up and manage the subjects for
+each given study group.
+
+Operator(s):  
+Name______________________________ Init______   Name______________________________ Init______ 
+
+
+# Required credentials/training
+
+No special qualifications required.
+
+
+# Required materials
+
+ - Consent materials
+ - Lifelogging devices set up according to the *Lifelogging Device Setup* protocol
+ - Lifelogging device pouches with neck straps
+ - [Participant instructions][1]
+ - Measuring tape with centimeter marks
+
+
+# Methods and procedures
+
+
+## Consenting and logging the subject
+
+Consent the subject according to OSU SOPs.  
+
+*Note: The current PI on IRB #2009B0093 is Brandon Turner. Supply the subject with this
+information and his contact information (turner.826@osu.edu).*  
+
+Record the assignment of device ID to
+subject ID:  
+
+|**Subject ID** |**Device ID** |**Operator** | |**Subject ID** |**Device ID** |**Operator** |
+|---------------|--------------|-------------|-|---------------|--------------|-------------|
+|               |              |             | |               |              |             |
+|               |              |             | |               |              |             |
+|               |              |             | |               |              |             |
+|               |              |             | |               |              |             |
+|               |              |             | |               |              |             |
+
+
+## Personal tutorial
+
+Turn the Lifelogging device on and give the subject a copy of the Participant
+Instructions to keep. Go through the Participant Instructions with them, demonstrating how
+to use the device, with particular focus on the following points:  
+
+ - WiFi
+     - How to set up WiFi
+     - The importance of plugging in and connecting to Wifi each night
+ - How to turn recording on and off and how to block the camera  
+ - Basic privacy considerations  
+ - How and when to use the upload veto function  
+ - When and how to run the Cognitive Battery
+     - It is advisable to bring a second device for demonstrating the
+Cognitive Battery without creating "fake" CogBat files on the subject's
+own device
+     - Lead them through the first load-up, to the instruction screens,
+but allow them to use the in-task demos to learn the tasks themselves
+     - They should set the Clock app alarm to the same time each day,
+and try as much as possible to do the tasks near that time each day
+     - Recommend a low-distraction environment
+     - Ask them to run through the tasks to the end (after the final
+screen) each time, and not quit out early  
+ - How to contact us  
+
+Ask the subject to review the Participant Instructions again on the day that they
+actually begin data collection.
+
+
+## Pouch setup  
+
+Each participant gets one pouch with a neck lanyard. You may have to adjust
+the length of the cord so that the phone hangs comfortably. The phone should
+point straight forward (rather than up as it may if it is resting too high
+on the chest) and not hang so low that it swings back and forth or bounces
+on the stomach when walking. For most subjects, a position in front of the
+middle of the rib cage works well.
+
+
+## Exchange information with subject  
+
+ - **Contact information**<br> Ask the subject if they would supply a
+phone number and an email address at which they can be contacted for
+study purposes. Record this contact info below.  
+
+Email___________________________ Phone number_________________________
+
+ - **Head circumference**<br> Using the tape measure, record the subject's
+head circumference. Place the
+metal end in the center of the subject's forehead. Wrap the tape snugly around
+the cranium, just above the ears and touching the occipital bone in back.
+Take the measurement in centimeters where the tape overlaps in front. Remove
+the tape and repeat the process once more to double-check the measurement.
+Record this info so that the EEG operator can use it for setup in the future.  
+
+Head circumference (cm)_________  
+Operator_________ Date____ /____ /__________  
+
+ - **fMRI info**<br>
+Provide the subject with a link to the scan center's fMRI screening form
+and ask them to review it for any contraindications to scanning. Note
+that this is not the actual pre-screening and no form should be collected;
+this is only to bring possible contraindications to attention ahead of
+time.<br>
+If the subject wears
+glasses, notify them that this information will be needed before fMRI in
+order to assemble the appropriate fMRI-safe glasses. Alternately, they may
+wear contact lenses if they have them.<br>
+Also notify them that they will
+need to have ready the contact information of the Primary Care Physician that
+they are currently seeing on the day of fMRI or before. (If they are not
+currently seeing a Primary Care Physician, they may get one before the date
+of the scan. Emphasize that it is imperative that they have a medical
+practitioner that they are actively seeing who can receive a copy of
+their scan information for review, since this is considered personal health
+information. Without this condition met, we will not be able to conduct
+the scan.)  
+
+Operator_________ Date____ /____ /__________  
+
+ - **Scheduling**
+Discuss availability with the subject for the coming month or two, and
+plan out a schedule for each phase of the experiment, including:  
+
+    - Collection and Cognitive Battery: This phase currently
+spans 3 calendar weeks, starting on a Sunday and ending on the Saturday
+21 days later.  The subject should be able to wear the device and
+perform the tasks for at least 8 hours (though more is better!) and
+have access to electricity and WiFi on the majority of the days during
+the period. The subject should also remain within the state during
+collection. A day or two of non-collection is acceptable, but
+if the subject anticipates much longer stretches where they will be
+unable to collect, the collection period should be moved back as 
+neccessary to a period with fewer conflicts.<br>
+After setup, the subject should be instructed to take the phone
+home and keep it powered off until actual collection begins.  
+
+    - fMRI sensing: This will require at least 2 hours of in-person
+time at the OSU facility within business hours. It should ideally
+take place in the second week after the end of collection (so
+there is approximately 1 week of "wait time" in between).  
+
+    - EEG sensing: This will require at least 2 hours of in-person
+time at the OSU facility within business hours. It should ideally
+take place as close to 1 week after the fMRI sensing session as
+possible.  
+
+The exact scheduling of the two sensing sessions can be left open
+intially, so long as the subject identifies appropriate periods
+in which they anticipate no conflicts that would prevent them
+from coming in for the sessions. When about 2 weeks remain in the
+collection period, the subject should be queried
+for concrete availability and appointments made with the fMRI
+and EEG facilities.  
+
+Operator_________ Date____ /____ /__________  
+
+
+# IRB protocols
+
+ - 2009B0093: Networks of Memories
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|180102             |01/02/2018     |First version                                         |
+
+
+
+[//]: # (Link URLs below:)
+
+[1]: https://osf.io/ekn8p/
