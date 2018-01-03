@@ -1,15 +1,12 @@
 ﻿
-TITLE
------
+Lifelogging - Device recovery and reset
+---------------------------------------
 
 Author: Michael Gravina  
-Revision: 170918  
-Effective date: 09/18/2017  
+Revision: 180103  
+Effective date: 01/03/2018  
 
 
-
-
-When you retrieve phones, make sure to offload all GPSLogger files manually to be sure
 
 
 
@@ -42,6 +39,51 @@ IRB protocols
 
 
 # Methods and procedures
+
+Plug the phone in and let it charge to full. Check that it is connected to WiFi.
+After some time has passed, verify that the
+Play tab of the Unforgettable.me app does not say "UPLOADING" and the Review tab says
+"There are no segments that need to be reviewed at this time". If either of these
+conditions are not met, there is data still data from the app that needs to be
+uploaded; leave the phone on power and WiFi until this is completed.
+
+Once all data has been uploaded from the Unforgettable.me app, go to the Login tab.
+Press the "UNLOCK" button and enter the password to unlock the app. Log out, then
+log back in again. Confirm that all settings are correct, and press the "LOCK"
+button to re-lock the app.
+
+
+Connect the phone to your computer using the Micro-B USB cable. After a moment (and possible
+setup dialog), you will see that the phone has appeared as a drive under File Manager.
+
+Navigate to `Internal storage/SMILE/data/CognitiveBattery/`. You will see a folder for the
+most recent subject (labeled with the subject ID). Verify that this folder contains
+.slog files for each day of collection and copy the whole folder to your computer.
+
+Navigate to `Internal storage/Android/data/com.mendhak.gpslogger/files/`. You will see all
+of the .csv files that were collected by the GPSLogger app during the collection period
+(one for each day). Copy all the .csv files to your computer.
+
+Copy the data files to Borg
+
+Delete everything
+
+
+
+When you retrieve phones, make sure to offload all GPSLogger files manually to be sure:
+While consolidating the archive, make sure that there is one GPSLogger .csv 
+file (YYYYMMDD.csv filename format) for each of the 21 days of collection.
+Occasionally these fail to
+auto-send from the Lifelogging devices while they are in the field. If
+a file is missing, it can usually be restored when the device is recovered
+and stripped. The `Internal storage/Android/data/com.mendhak.gpslogger/files/` directory saves copies of
+all GPSLogger files which should be removed from the on-device directory and
+copied into the Borg directory (overwriting those that were sent during
+collection).  
+
+
+
+
 
 ## Sub-heading
 

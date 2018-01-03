@@ -24,6 +24,46 @@ JoR TrialInBlock starts at 1 no matter what, it seems, because of the way it is 
 
 
 
+The experimental scripts: 
+
+Randomizes the images.
+
+  - **Replication of PNAS paper:**
+      - 21 days x 8 images per day (4 in the morning, 4 in the afternoon) = 168 images total
+      - We do not want a time-block of time much greater than 7 minutes. Half a block of 84 images takes about 7.5 minutes. 4 time-blocks will exhaust all 168 images and take about 30 minutes.
+      - **File structure:**<br>
+        All image files should be collected into the same "images" folder within each SMILE experiment. This folder can be assembled from a folder structure of the sort used in Meredith's experiment (see below) using the  `grabImagesIntoOneFolder.py` script.
+    - **File preprocessing:**<br>
+        The `resizeImages.py` script should be used to resize all images to a standard height of 500 pixels (enter `python resizeImages.py folder` where `folder` is the directory containing all of the collected images for the experiment). Do this on the curated copies, NOT on the original images in the non-curated folders.
+
+<br>
+
+  - **Meredith's experiment:**
+<br><br>
+     - Select images to balance across the following bins:
+         1. Which image is more recent (first or second image, 2 conditions)
+         2. Gap between images (6 conditions), "logarithmically" spaced:
+             - Within-morning/evening, between morning and evening, 1-2 days, 4-6 days, 8-12 days, 7 days (to explore cyclical patterns)
+             - Max gap of half experimental duration to avoid compound with bin set #1
+             - Includes at least a pair from each day to sample the supposed “temporal fovea”
+         3. Recency of the most recent (proximal and distal, for 3 conditions)
+            - Logarithmically spaced
+<br><br>
+    - The above will yield 36 different conditions (2 order x 6 gap x 3 recency). Include 2 of each condition in each block of 72 image pairs. At ~5s per trial/pair, that is 6 minutes per block. Running 4 blocks will take ~24 minutes.
+    - In the event that subjects are missing data for specific days, images should be pulled evenly from the remaining days in order to make up for the shortfall.
+    - **File structure:**<br>
+        The curated image files should be sorted into folders by day (named in format 'subj00X_dayXX', where XX is the left-zero-padded day of the study, starting at 01), and within each day folder into subfolders named 'morning' and 'afternoon'.
+    - **File preprocessing:**<br>
+        The `resizeImages.py` script should be used to resize all images to a standard height of 500 pixels (enter `python resizeImages.py folder` where `folder` is the directory containing the 21 day-level folders). Do this on the curated copies, NOT on the original images in the non-curated folders.
+
+
+
+
+
+
+
+
+
 
 
 # Purpose

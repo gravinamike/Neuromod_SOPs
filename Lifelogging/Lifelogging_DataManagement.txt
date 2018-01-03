@@ -3,16 +3,8 @@ Lifelogging - Data management
 -----------------------------
 
 Author: Michael Gravina  
-Revision: 171212  
-Effective date: 12/12/2017  
-
-
-
-Curation - make sure you have all GPSLogger files!
-When you recover the phone, just grab all the GPSLogger files at once.
-
-
-
+Revision: 180103  
+Effective date: 01/03/2018  
 
 
 # Purpose
@@ -83,6 +75,19 @@ then he corrected the sorting script to operate on Zulu-to-EST-converted
 timestamps. This folder contains the original sorts, in case they are needed.  
 
 
+## Verifying completion of GPSLogger files  
+
+While consolidating the archive, make sure that there is one GPSLogger .csv 
+file (YYYYMMDD.csv filename format) for each of the 21 days of collection.
+Occasionally these fail to
+auto-send from the Lifelogging devices while they are in the field. If
+a file is missing, it can usually be restored when the device is recovered
+and stripped. The `Internal storage/Android/data/com.mendhak.gpslogger/files/`
+directory saves copies of
+all GPSLogger files which should be removed from the on-device directory and
+copied into the Borg directory (overwriting those that were sent during
+collection).  
+
 
 ## Subject metadata file  
 
@@ -111,6 +116,7 @@ the group.
 |**SOP Revision #** |**Date**       |**Description of change(s)**                          |
 |-------------------|---------------|------------------------------------------------------|
 |171212             |12/12/2017     |First version                                         |
+|180103             |01/03/2018     |Add instructions for ensuring GPSLogger .csv files    |
 
 
 [//]: # (Invisible comment)

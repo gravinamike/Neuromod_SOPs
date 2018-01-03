@@ -1,0 +1,105 @@
+﻿
+Lifelogging - Curation
+----------------------
+
+Author: Michael Gravina  
+Revision: 180103  
+Effective date: 01/03/2018  
+
+
+
+# Purpose
+
+This protocol describes practices for curating the Lifelogging data after it has been
+collected and archived. The purpose of curation is to select a set of stimuli for 
+the Lifelogging experiments from the un-curated archive.  
+
+
+# Assignment of responsibilities
+
+A principal operator should be assigned to set up and manage the Lifelogging data for
+each given study group.
+
+Subject IDs:__________________________________   
+
+Operator(s):  
+Name______________________________ Init______   Name______________________________ Init______  
+
+
+# Required training and supplies
+
+ - Prior to beginning curation, the operator should familiarize themselves with the final
+archive structure prescribed in the *Lifelogging - Data Management* protocol.  
+ - Access to the Borg server  
+
+
+# Methods and procedures
+
+## Curation scheme for image sets
+
+ - Verify that there is, natively, a uniform sampling across the days of collection in the archive.
+It is expected that a day or two may be omitted for subject-specific reasons, and some days may have
+sparser data than others. However, if there are long runs of days with no data or many half-days with
+very little data, this should be noted in the study record and consideration of these irregularities
+should be made when constructing the curated stimuli set (see below).  
+<br>
+ - Set up the folders for the curated image set. For the current experimental design, the curated
+folder structure for each subject should contain:
+    - 21 day folders, named in format 'subj00X_dayXX', where XX is the left-zero-padded day of
+the study, starting at 01
+    - 2 half-day folders per day, named 'morning' and 'afternoon'
+    - 192 images total, (meaning that most half-day folders will contain 4-5 images)  
+<br>
+ - Now start copying (not moving) image files from the dated archive folders into the curated
+folder structure.  
+<br>
+ - Exclude:
+    - Any image which is too dark or blurry to clearly identify.  
+    - Uninteresting images taken right up against walls, ceilings, floors, etc.  
+    - Reflections of the subjects themselves.   
+<br>
+ - Try to pick out as many distinct episodes in each basic time unit (a half-day by default) as
+possible.  
+    - **The definition of an "episode"** will be somewhat arbitrary. An easy case would be a subject who
+travels regularly between clearly different locations to do markedly different things; a hard
+case would be a subject who stays in one place for the majority of the time, who spends long
+periods doing the same thing (such as using computers or mobile phones), or who constantly
+travels without stopping.
+In these harder cases, episodes can be defined by transitions to new activities, a shift of
+the people the subject is interacting with, movements between smaller sub-sections of the same
+setting, etc.  
+    - **Try to select episodes fairly evenly across time and space, and features**. If there is a very
+rich interval at the beginning of a time period, you may be tempted to get all the episodes you need from
+that interval and neglect the rest of the period. Avoid this if possible, and select at least some
+episodes from later in the period. By the same token, if a single spatial setting dominates a time
+period, try to include at least a few other locations if possible rather than taking all episodes from
+that one setting. By a similar token, if there are a mix of indoor and outdoor scenes or scenes with
+and without people, try and include at least some representation of each.  
+    - **Exercise judgement** in all of this. Try to follow the guidelines above to the best of
+your ability, but when in doubt, it's better to err on the side of ommission. For some very short
+or uniform time periods, you may just have to accept a less-than-desired number of episodes or
+even none at all. Don't duplicate obviously alike images just to "fill out" the number of episodes
+in a given time period or create even coverage where none really exists.    
+When a fixed number of episodes are called for in the experimental design, you can correct for such gaps
+by selecting a number of extra episodes equal to the shortfall, evenly distributed across the other
+time-periods. For instance, for a subject with good data on most days but 2 days with no usable episodes,
+and a requirement to try to pick 5 episodes each day, you would choose no episodes from those 2 days
+and spread an additional 10 episodes as evenly as possible across the remaining days.  
+
+
+# IRB protocols
+
+ - 2009B0093: Networks of Memories
+
+
+# References
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|180103             |01/03/2018     |First version                                         |
+
+
+[//]: # (Invisible comment)
