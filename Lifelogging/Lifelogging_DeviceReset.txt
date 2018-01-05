@@ -1,0 +1,128 @@
+﻿
+Lifelogging - Device recovery and reset
+---------------------------------------
+
+Author: Michael Gravina  
+Revision: 180105  
+Effective date: 01/05/2018  
+
+
+# Purpose
+
+This protocol describes the final recovery of data from the Lifelogging devices after the
+collection period, followed by the resetting of the devices so that they can be
+stored and later reassigned to new subjects.  
+
+While a large amount of data is transmitted remotely while the device still is out in the
+field, copies of much of this data persist on the device and must be stripped off manually
+once the device is brought back into the lab. This is also an opportunity to double-check
+for data that was not sent remotely for whatever reason, and to recover data of certain
+types (like CogBat .slog files) that are never sent remotely.  
+
+
+# Assignment of responsibilities
+
+A primary operator should be assigned to recover and reset each device after a session
+in the field.  
+
+Operator(s):  
+Name______________________________ Init______   Name______________________________ Init______  
+
+Record the device ID, subject ID and operator recovering and resetting the device:  
+
+|**Subject ID** |**Device ID** |**Operator** | |**Subject ID** |**Device ID** |**Operator** |
+|---------------|--------------|-------------|-|---------------|--------------|-------------|
+|               |              |             | |               |              |             |
+|               |              |             | |               |              |             |
+|               |              |             | |               |              |             |
+|               |              |             | |               |              |             |
+|               |              |             | |               |              |             |
+
+
+# Methods and procedures
+
+Plug the phone in and let it charge to full. Check that it is connected to WiFi.
+Make sure that the Unforgettable.me and GPSLogger apps are both not recording.  
+
+
+## Clearing Unforgettable.me and changing passwords
+
+After some time has passed on power and WiFi, verify that the
+Play tab of the Unforgettable.me app does not say "UPLOADING" and the Review tab says
+"There are no segments that need to be reviewed at this time". If either of these
+conditions are not met, there is data still data from the app that needs to be
+uploaded; leave the phone on power and WiFi until this is completed.  
+
+Once all data has been uploaded from the Unforgettable.me app, go to the Login tab.
+Press the "UNLOCK" button and enter the password to unlock the app. Log out.
+
+The password for each device should be reset between uses by contacting the
+Unforgettable.me team (Ben Stone benjamin.stone@gmail.com,
+Andrew Hide andrew.hide@newcastle.edu.au, or Simon Dennis simon.dennis@gmail.com)
+and requesting it.  
+
+Once you have set a new password (and stored it securely), log back in again.
+Confirm that all settings are correct, and press the "LOCK"
+button to re-lock the app.  
+
+
+## Blanking CogBat subject ID and WiFi connections
+
+Go to the Cognitive Battery app. After the subject ID screen loads, enter "Settings",
+turn off "Lock subject ID", clear out the subject ID from the text field, and
+proceed to the next screen. Then exit the app before continuing to the battery. This
+will blank out the subject ID field for future uses, ensuring that no files are
+accidentally saved under an old subject ID.  
+
+Go to WiFi connection settings and "Forget" every network that is listed. This will
+prevent password conflicts or unwanted network access the next time the phone is
+used.  
+
+
+## Offloading files
+
+Connect the phone to your computer using the Micro-B USB cable. After a moment (and possible
+setup dialog), you will see that the phone has appeared as a drive under File Manager.  
+
+Navigate to `Internal storage/SMILE/data/CognitiveBattery/`. You will see a folder for the
+most recent subject (labeled with the subject ID). Verify that this folder contains
+.slog files for each day of collection and copy the whole folder to your computer.  
+
+Navigate to `Internal storage/Android/data/com.mendhak.gpslogger/files/`. You will see all
+of the .csv files that were collected by the GPSLogger app during the collection period
+(one for each day). Copy all the .csv files to your computer.  
+
+Copy all of the CogBat and GPSLogger files to the Borg server, placing the files into the
+proper location according to the *Lifelogging - Data Management* protocol.
+*In particular, make sure that there is one GPSLogger .csv 
+file (YYYYMMDD.csv filename format) for each of the 21 days of collection.
+Occasionally these fail to auto-send from the Lifelogging devices while they are in the
+field. If a file is missing, it can usually be restored when the device is recovered
+and stripped by overwriting the .csv files that were sent remotely with those pulled
+directly from the device.*  
+
+Delete all copies of all Lifelogging data files from both the phone itself and the
+computer used as an intermediate for transfer (including clearing them from the
+Recycle Bin after they have been deleted.  
+
+
+## Storage
+
+After the Lifelogging device has been completely stripped, power it down until it
+is to be prepped for the next use.  
+
+
+
+# IRB protocols
+
+ - 2009B0093: Networks of Memories
+
+
+# Revisions
+
+|**SOP Revision #** |**Date**       |**Description of change(s)**                          |
+|-------------------|---------------|------------------------------------------------------|
+|180105             |01/05/2018     |First version                                         |
+
+
+[//]: # (Invisible comment)
